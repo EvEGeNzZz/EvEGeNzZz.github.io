@@ -1,0 +1,27 @@
+.header {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.header_logo {
+  margin: 21px 0 0;
+
+  img {
+    height: 38px;
+  }
+}
+
+.header_contacts {
+  float: right;
+  margin: 15px 0 0;
+  width: 165px;
+  color: #747a7a;
+  font-family: 'Tahoma';
+  font-size: 14px;
+  text-align: right;
+
+  span {
+    color: #5db057;
+    font-family: 'PFDinTextPro';
+    font-size: 24px;
+  }
+}

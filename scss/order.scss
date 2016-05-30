@@ -1,0 +1,104 @@
+.order_title {
+  color: #fff;
+  font-family: 'PFDinTextPro';
+  font-size: 30px;
+
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.order_desc {
+  margin: 14px 0 0;
+  padding: 0 188px;
+  color: #c0f5bc;
+  font-family: 'Tahoma';
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.order_form {
+  padding: 0 375px;
+  margin: 30px 0 0;
+  font-family: 'Tahoma';
+  font-size: 14px;
+
+  input {
+    width: 350px;
+    padding: 13px 20px 12px;
+    background: #4f964a;
+    border: 1px solid #4b8f46;
+    border-radius: 7px;
+    color: #274a24;
+
+    & + input {
+      margin: 17px 0 0;
+    }
+  }
+}
+
+.order_form-btn {
+  margin: 19px 0 0;
+  padding: 15px 45px 14px;
+  width: 350px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 22px;
+  color: #fff;
+  font-family: 'PFDinTextPro';
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.order_contacts {
+  margin: 47px 0 0;
+  padding: 0 280px;
+  overflow: hidden;
+}
+
+.order_contacts-text {
+  color: #c0f5bc;
+  font-family: 'Tahoma';
+  font-size: 14px;
+}
+
+.order_contacts-phone {
+  position: relative;
+  float: left;
+  margin: 11px 0 0 90px;
+  color: #fff;
+  font-family: 'PFDinTextPro';
+  font-size: 23px;
+
+  &:before {
+    position: absolute;
+    top: 6px;
+    left: -33px;
+    display: block;
+    width: 12px;
+    height: 16px;
+    background: url(../img/icon/phone.png);
+    content: '';
+  }
+}
+
+.order_contacts-mail {
+  position: relative;
+  float: left;
+  margin: 15px 0 0 93px;
+  color: #fff;
+  font-family: 'Tahoma';
+  font-size: 16px;
+  font-weight: 700;
+
+  &:before {
+    position: absolute;
+    top: 6px;
+    left: -27px;
+    display: block;
+    width: 16px;
+    height: 10px;
+    background: url(../img/icon/mail.png);
+    content: '';
+  }
+}
