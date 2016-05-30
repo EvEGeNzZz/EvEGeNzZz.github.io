@@ -1,0 +1,207 @@
+@mixin p($position: "", $top: "", $right: "", $bottom: "", $left: "") {
+	@if $position != "" {
+		@if $position == "s" {
+			position: static;
+		}
+		@if $position == "r" {
+			position: relative;
+		}
+		@if $position == "a" {
+			position: absolute;
+		}
+		@if $position == "f" {
+			position: fixed;
+		}
+	}
+
+	@if $top != "" {
+    @if $top != "f" {
+      top: $top;
+    }
+
+    @if $top == "f" {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+	}
+
+	@if $right != "" {
+		right: $right;
+	}
+	@if $bottom != "" {
+		bottom: $bottom;
+	}
+	@if $left != "" {
+		left: $left;
+	}
+}
+
+@mixin triangle($direction, $color, $width, $height: "") {
+  border: $width solid transparent;
+
+  @if $height != "" {
+    border-width: $width $height;
+  }
+
+  @if $direction != "" {
+    @if $direction == "t" {
+      border-top-color: $color;
+    }
+    @if $direction == "r" {
+      border-right-color: $color;
+    }
+    @if $direction == "b" {
+      border-bottom-color: $color;
+    }
+    @if $direction == "l" {
+      border-left-color: $color;
+    }
+  }
+}
+
+// http://compass-style.org/reference/compass/helpers/sprites/
+@mixin get-sprite($map, $sprite, $repeat: no-repeat, $height: true, $width: true) {
+  //http://compass-style.org/reference/compass/helpers/sprites/#sprite-file
+  $sprite-image: sprite-file($map, $sprite);
+
+  // http://compass-style.org/reference/compass/helpers/sprites/#sprite-url
+  $sprite-map: sprite-url($map);
+
+  // http://compass-style.org/reference/compass/helpers/sprites/#sprite-position
+  $sprite-position: sprite-position($map, $sprite);
+
+  // Returns background
+  background: $sprite-map $sprite-position $repeat;
+
+  // http://compass-style.org/reference/compass/helpers/image-dimensions/
+  // Checks to see if the user wants height returned
+  @if $height == true {
+    // Gets the height of the sprite-image
+    $sprite-height: image-height($sprite-image);
+    // Returns the height
+    height: $sprite-height;
+  }
+
+
+  // http://compass-style.org/reference/compass/helpers/image-dimensions/
+  // Checks to see if the user wants height returned
+  @if $width == true {
+     // Gets the height of the sprite-image
+    $sprite-width: image-width($sprite-image);
+    // Returns the width
+    width: $sprite-width;
+  }
+}
+
+@function getIconHeight($name) {
+  @return image-height(sprite-file($icon-sprites, $name));
+}
+
+@function getIconWidth($name) {
+  @return image-width(sprite-file($icon-sprites, $name));
+}
+
+@mixin make-icon-sprite($map, $name, $arg1, $arg2: '') {
+  @if $arg1 == "b" {
+    display: block;
+  }
+
+  @if $arg1 != "b" {
+    display: inline-block;
+  }
+
+  @include get-sprite($map, $name);
+
+  content: "";
+}
+
+@mixin icon($name, $arg1: "ib", $arg2: '') {
+  @include make-icon-sprite($icon-sprites, $name, $arg1, $arg2);
+}
+
+@mixin block-with-lateral-line() {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  text-align: center;
+}
+
+@mixin right-later-line($offset, $offsetTop: 0, $color: #ccc) {
+  @include block-with-lateral-line;
+
+  &:after {
+    @include decore-line($offsetTop, $color);
+    width: 100%;
+    right: -$offset;
+  }
+}
+
+@mixin lateral-line($offset, $offsetTop: 0, $color: #ccc) {
+  @include block-with-lateral-line;
+
+  &:before,
+  &:after {
+    @include decore-line($offsetTop, $color)
+  }
+
+  &:before {
+    left: -$offset;
+    margin: 0 0 0 -50%;
+  }
+
+  &:after {
+    left: $offset;
+    margin: 0 -50% 0 0;
+  }
+}
+
+@mixin lateral-line-color($color) {
+  &:after, &:before {
+    background-color: $color;
+  }
+}
+
+@mixin hamburger($color, $width, $height, $offset) {
+  > * {
+    display: block;
+    width: $width;
+    height: $height;
+    background: $color;
+
+    &:not(:first-child) {
+      margin-top: $offset;
+    }
+  }
+}
+
+//
+// Mixins
+// --------------------------------------------------
+
+
+// Utilities
+// -------------------------
+
+// Clearfix
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  &:after {
+    clear: both;
+  }
+}

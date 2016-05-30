@@ -1,0 +1,172 @@
+/* BASE */
+
+.hidden {
+  display: none;
+}
+
+.hidden-with-js {
+  display: none;
+
+  .no-js & {
+    display: block;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.invisible-with-js {
+  visibility: hidden;
+
+  .no-js & {
+    visibility: visible;
+  }
+}
+
+.is-transparent {
+  opacity: 0 !important;
+}
+
+.disable-hover,
+.disable-hover * {
+  pointer-events: none !important;
+}
+
+.unactive_block {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+  }
+}
+
+.hidden-control {
+  position: absolute !important;
+  z-index: -1 !important;
+  opacity: 0 !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  visibility: hidden !important;
+}
+
+/* FORMS */
+.r-textarea,
+.r-form-control,
+.reset-button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  text-align: inherit;
+  min-height: none;
+  min-width: none;
+
+  &::placeholder {
+    color: inherit;
+  }
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: transparent;
+    cursor: inherit;
+    display: block;
+  }
+
+  form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+/* LAYOUT */
+.margin-module *:last-child {
+  margin-bottom: 0;
+}
+
+.full-height-center {
+  display: table;
+  width: 100%;
+
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.allign {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.allign-cell {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.allign-top-left,
+.allign-center-left,
+.allign-bottom-left {
+  text-align: left;
+}
+
+.allign-top-center,
+.allign-center-center,
+.allign-bottom-center {
+  text-align: center;
+}
+
+.allign-top-right,
+.allign-center-right,
+.allign-bottom-right {
+  text-align: right;
+}
+
+.allign-top-left,
+.allign-top-center,
+.allign-top-right {
+  vertical-align: top;
+}
+
+.allign-center-left,
+.allign-center-center,
+.allign-center-right {
+  vertical-align: middle;
+}
+
+.allign-bottom-left,
+.allign-bottom-center,
+.allign-bottom-right {
+  vertical-align: bottom;
+}

@@ -1,0 +1,110 @@
+doctype html
+html
+  head
+    meta charset='utf-8'
+    link href='css/main.css' rel='stylesheet'
+    script type="text/javascript" src="javascripts/jquery-2.2.3.min.js"
+    javascript:
+      $(function() {
+        $(".search-form_input").focus(function(){
+          $(".search-form").addClass("is-active");
+        });
+        $(".search-form_input").blur(function(){
+          $(".search-form").removeClass("is-active");
+        });
+      });
+
+  body
+    .page
+      .header
+        .container
+          .header_logo
+            img src='img/icon/logo.png'
+          .language
+            img src='img/icon/language.png'
+          .main-nav
+            .main-nav_item События
+            .main-nav_item Истории
+            .main-nav_item Обмен танцорами
+            .main-nav_item Фото дня
+            .main-nav_item Фраза дня
+            .main-nav_item
+          .search-form
+            input.search-form_input placeholder="Найти город"
+          .login-btn Вход
+
+
+      .page_dance
+        .container
+          .page_title
+            b Танцуй
+            |  и
+            b  путешествуй!
+          .page_subtitle
+            | Пригласи крутого хореографа в свой город.
+            span Преподавай танцы в городе мечты
+          .video-btn
+            | Смотреть видео
+            span
+          .page_desc
+            b World Dance Travel
+            |  — сообщество людей, увлеченных танцем и жаждущих путешествовать. Мы объединяем всех хореографов, готовых ехать в новые города/страны, и студии, которые готовы оплатить проезд и проживание мастера в обмен на бесплатные уроки
+          .social-btns
+            .social-btn.social_vk 33
+            .social-btn.social_fb 24
+            .social-btn.social_tw 0
+
+
+      .page_find
+        .container
+          .page_title
+            | Находи студии и хореографов по
+            span  всему миру
+          .page_desc
+            b WDT
+            |  — это место, где любой человек, интересующийся танцами, сможет найти для себя информацию о всех студиях своего города, хореографах и командах, которые танцуют в его городе.
+
+      .page_create
+        .container
+          .page_title
+            b Создавай
+            |  и
+            i  участвуй
+            span в международных и локальных танцевальных событиях
+          .page_desc Узнавай о всех событиях в мире танца: вечеринки в клубах, дни открытых дверей в студиях, флешмобы, концерты, соревнования, батлы, международные фестивали
+
+
+      .footer
+        .container
+          .footer-logo
+            img src='img/icon/footer-logo.png'
+          .footer_column.footer_column__desc
+            .footer_desc
+              b WDT
+              |  — сообщество людей, увлеченных танцем и жаждущих путешествовать. Мы объединяем всех хореографов, студий и команд.
+          .footer_column.footer_column__open
+            .footer_column_title Открывай
+            .footer_nav
+              .footer_nav_item События
+              .footer_nav_item Истории
+              .footer_nav_item Обмен танцорами
+              .footer_nav_item Фото дня
+              .footer_nav_item Фраза дня
+          .footer_column.footer_column__learn
+            .footer_column_title Узнавай
+            .footer_nav
+              .footer_nav_item О проекте
+              .footer_nav_item Контакты
+              .footer_nav_item Помощь
+              .footer_nav_item Пресс-центр
+              .footer_nav_item Рекламодателям
+          .footer_column.footer_column__sub
+            .footer_sub
+              .footer_sub_title Хочешь быть первым?
+              .footer_sub-form
+                input placeholder="Введите ваш e-mail"
+                span
+            .footer_socials
+              a.footer_social.footer_social__vk
+              a.footer_social.footer_social__tw
+              a.footer_social.footer_social__fb

@@ -1,0 +1,144 @@
+.footer {
+  padding: 47px 0 50px;
+  background: #3e454c;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin: 4px 0 0;
+}
+
+.footer_column {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer_column__desc {
+  margin: 0 0 0 59px;
+}
+
+.footer_column__open {
+  margin: 0 0 0 65px;
+}
+
+.footer_column__learn {
+  margin: 0 0 0 53px;
+}
+
+.footer_column__sub {
+  margin: 0 0 0 42px;
+}
+
+.footer_column_title {
+  color: #697480;
+  font-family: 'OpenSans';
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer_desc {
+  width: 135px;
+  color: #fff;
+  font-family: 'OpenSans';
+  font-size: 12px;
+  opacity: 0.4;
+  line-height: 1.8;
+
+  b {
+    font-weight: 700;
+  }
+}
+
+.footer_nav {
+  margin: 7px 0 0;
+}
+
+.footer_nav_item {
+  color: #fff;
+  font-family: 'OpenSans';
+  font-size: 12px;
+
+  & + .footer_nav_item {
+    margin: 7px 0 0;
+  }
+}
+
+.footer_sub_title {
+  margin: 3px 0 0;
+  color: #fff;
+  font-family: 'MuseoSansCyrl';
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.footer_sub-form {
+  position: relative;
+  margin: 16px 0 0;
+
+  input {
+    width: 240px;
+    padding: 10px 14px 7px;
+    border: 1px solid #35414e;
+    border-radius: 4px;
+    background: #9c9b99;
+    color: #fff;
+    font-family: 'OpenSans';
+    font-size: 13px;
+  }
+
+  span {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    display: block;
+    width: 41px;
+    height: 35px;
+    padding: 5px 10px 6px 11px;
+    background: #ff7f66;
+    border-radius: 0 4px 4px 0;
+    border-left: 1px solid #656e74;
+    content: '';
+
+    &:before {
+      display: block;
+      color: #ffd9d1;
+      font-family: 'OpenSans';
+      font-size: 18px;
+      font-weight: 700;
+      content: '@';
+    }
+  }
+}
+
+.footer_socials {
+  margin: 43px 0 0;
+}
+
+.footer_social {
+  display: inline-block;
+  height: 15px;
+  content: '';
+
+  & + .footer_social {
+    margin-left: 24px;
+  }
+}
+
+.footer_social__vk {
+  width: 13px;
+  background: url(../img/icon/footer-vk.png);
+}
+
+.footer_social__fb {
+  width: 10px;
+  height: 18px;
+  background: url(../img/icon/footer-fb.png);
+}
+
+.footer_social__tw {
+  width: 18px;
+  background: url(../img/icon/footer-tw.png);
+}

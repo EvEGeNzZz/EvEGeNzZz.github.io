@@ -1,0 +1,142 @@
+.page_dance {
+  position: relative;
+  padding: 142px 0 178px;
+  background: url(../img/background.jpg) top center no-repeat;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+
+  .page_desc {
+    padding: 0 211px;
+    color: #e5e5e5;
+    font-weight: 300;
+
+    b {
+      color: #fff;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background: #47d9bf;
+    content: '';
+  }
+
+  &:before {
+    position: absolute;
+    bottom: 0;
+    width: 42px;
+    height: 36px;
+    border-radius: 4px 4px 0 0;
+    background: url(../img/icon/arrow.png) center center no-repeat;
+    background-color: #47d9bf;
+    content: '';
+  }
+}
+
+.page_title {
+  font-family: 'PTSansCaption';
+  font-size: 48px;
+  text-transform: uppercase;
+
+  b {
+    font-weight: 700;
+  }
+}
+
+.page_desc {
+  font-family: 'OpenSans';
+  font-size: 15px;
+  line-height: 1.6;
+
+  b {
+    font-weight: 700;
+  }
+}
+
+.page_subtitle {
+  font-family: 'PTSansCaption';
+  font-size: 18px;
+  font-size: 700;
+  margin: 7px 0 0;
+
+  span {
+    position: relative;
+    margin-left: 25px;
+
+    &:before {
+      position: absolute;
+      top: 8px;
+      left: -15px;
+      display: block;
+      width: 5px;
+      height: 5px;
+      background: #e37762;
+      border-radius: 50%;
+      content: '';
+    }
+  }
+}
+
+.page_find {
+  background: #fff;
+
+  .container {
+    padding: 190px 0 199px 515px;
+  }
+
+  .page_title {
+    color: #3e454c;
+    font-weight: 700;
+    line-height: 1.2;
+
+    span {
+      color: #df3268;
+    }
+  }
+
+  .page_desc {
+    margin: 23px 0 0;
+    color: #3e454c;
+    padding-right: 20px;
+  }
+}
+
+.page_create {
+  background: #3d5999;
+
+  .container {
+    padding: 265px 370px 250px 0;
+  }
+
+  .page_title {
+    color: #fff;
+
+    b {
+      color: #f2d03b;
+      font-weight: 700;
+    }
+
+    i {
+      color: #47d9bf;
+      font-weight: 700;
+    }
+
+    span {
+      display: block;
+      font-size: 18px;
+      text-transform: none;
+    }
+  }
+
+  .page_desc {
+    margin: 28px 0 0;
+    padding: 0 100px 0 0;
+    color: #fff;
+    opacity: 0.3;
+  }
+}

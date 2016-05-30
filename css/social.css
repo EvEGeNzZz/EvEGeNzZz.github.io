@@ -1,0 +1,23 @@
+.social-btns
+.social-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+.social-btns
+.social-btn + .social-btn {
+  margin-left: 8px;
+}
+
+.social_vk {
+  background: #43658f;
+}
+
+.social_fb {
+  background: #39579a;
+}
+
+.social_tw {
+  background: #00abf0;
+}
