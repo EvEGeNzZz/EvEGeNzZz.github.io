@@ -1,0 +1,16 @@
+.main-nav {
+  margin: 0 0 0 32px;
+  color: #062033;
+  font-family: 'OpenSans';
+  font-size: 12px;
+}
+
+.main-nav_item {
+  display: inline-block;
+  padding: 15px 0;
+  vertical-align: top;
+
+  & + .main-nav_item {
+    margin-left: 23px;
+  }
+}

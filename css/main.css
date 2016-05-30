@@ -429,6 +429,23 @@ a {
   background: url(../img/icon/share-tw.png);
 }
 
+.main-nav {
+  margin: 0 0 0 32px;
+  color: #062033;
+  font-family: 'OpenSans';
+  font-size: 12px;
+}
+
+.main-nav_item {
+  display: inline-block;
+  padding: 15px 0;
+  vertical-align: top;
+}
+
+.main-nav_item + .main-nav_item {
+  margin-left: 23px;
+}
+
 .page_dance {
   position: relative;
   padding: 142px 0 178px;
@@ -754,23 +771,6 @@ a {
 
 .header_logo img {
   display: block;
-}
-
-.main-nav {
-  margin: 0 0 0 32px;
-  color: #062033;
-  font-family: 'OpenSans';
-  font-size: 12px;
-}
-
-.main-nav_item {
-  display: inline-block;
-  padding: 15px 0;
-  vertical-align: top;
-}
-
-.main-nav_item + .main-nav_item {
-  margin-left: 23px;
 }
 
 .search-form {
