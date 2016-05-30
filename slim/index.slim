@@ -3,202 +3,141 @@ html
   head
     meta charset='utf-8'
     link href='css/main.css' rel='stylesheet'
-    script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC-YcZQetzwoOxUEjX_SPZU2aBxuUUEmvg"
-    script type="text/javascript" src="javascripts/jquery-2.2.3.min.js"
-    javascript:
-      $(function() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 59.91716155, lng: 30.34333835},
-          scrollwheel: false,
-          zoom: 13
-        });
-      })
 
   body
     .page
       .header
         .container
-          .header_contacts
-            span 8 812 345 84 45
-            |  г. Сургут
           .header_logo
             img src='img/icon/logo.png'
           .main-nav
-            .main-nav_item.is-active Главная
-            .main-nav_item Заказать
-            .main-nav_item Вопросы
+            .main-nav_item О компании
+            .main-nav_item Работы
+            .main-nav_item Клиенты
+            .main-nav_item Работа у нас
             .main-nav_item Контакты
+          .header_btn
+            img src='img/icon/header-btn.png'
 
-      .page-section.page-section__products
+
+      .page-section.page-section__main
         .container
-          .page_title Наша продукция
-          .preview-list
-            .preview
-              .preview_img
-                img src='img/product.jpg'
-              .preview_title Керамзитный блок
-              .preview_desc
-                dl
-                  dt Морозостойкость:
-                  dd -50C
-                dl
-                  dt Габариты:
-                  dd 30х34х50
-                dl
-                  dt Вес:
-                  dd 2 кг
-                dl
-                  dt Прочность:
-                  dd 345
-              .preview_btn Заказать
-              .preview_price
-                dl
-                  dt Цена:
-                  dd
-                    span 20
-                    | р/шт
-            .preview
-              .preview_img
-                img src='img/product.jpg'
-              .preview_title Керамзитный блок
-              .preview_desc
-                dl
-                  dt Морозостойкость:
-                  dd -50C
-                dl
-                  dt Габариты:
-                  dd 30х34х50
-                dl
-                  dt Вес:
-                  dd 2 кг
-                dl
-                  dt Прочность:
-                  dd 345
-              .preview_btn Заказать
-              .preview_price
-                dl
-                  dt Цена:
-                  dd
-                    span 20
-                    | р/шт
-            .preview
-              .preview_img
-                img src='img/product.jpg'
-              .preview_title Керамзитный блок
-              .preview_desc
-                dl
-                  dt Морозостойкость:
-                  dd -50C
-                dl
-                  dt Габариты:
-                  dd 30х34х50
-                dl
-                  dt Вес:
-                  dd 2 кг
-                dl
-                  dt Прочность:
-                  dd 345
-              .preview_btn Заказать
-              .preview_price
-                dl
-                  dt Цена:
-                  dd
-                    span 20
-                    | р/шт
-            .preview
-              .preview_img
-                img src='img/product.jpg'
-              .preview_title Керамзитный блок
-              .preview_desc
-                dl
-                  dt Морозостойкость:
-                  dd -50C
-                dl
-                  dt Габариты:
-                  dd 30х34х50
-                dl
-                  dt Вес:
-                  dd 2 кг
-                dl
-                  dt Прочность:
-                  dd 345
-              .preview_btn Заказать
-              .preview_price
-                dl
-                  dt Цена:
-                  dd
-                    span 20
-                    | р/шт
+          .main_logo
+            img src='img/icon/main-logo.png'
+          .main_title
+            | мы делаем
+            span
+              b рекламу
+              |  и
+              b  креатив
 
-      .page-section.page-section__order
+
+      .page-section.page-section__about
         .container
-          .order_title
-            | Закажите образец
-            span  бесплатно
-          .order_desc Мы понимаем, что сделать выбор гораздо проще, если есть возможность увидеть и потрогать материал своими руками, поэтому Вы можете оставить свои контактные данные  в полях, которые находятся ниже, наш менеджер свяжется с Вами и уточнит информацию, куда и какой товар привезти.
-          .order_form
-            input placeholder='Как Вас зовут?'
-            input placeholder='Номер телефона'
-            .order_form-btn ОСТАВИТЬ ЗАЯВКУ ПРЯМО СЕЙЧАС
-          .order_contacts
-            .order_contacts-text Или свяжитесь с нами любым удобным для Вас способом:
-            .order_contacts-phone 8 800 2000 600
-            .order_contacts-mail office@buildteco.ru
+          .page_title О компании
+          .about_title
+            span TWIGA –
+            pre   крупнейшая независимая коммуникационная группа в России и странах СНГ. Член Ассоциации
+                коммуникационных агентств России (АКАР) с 1997 года.
+          .about_desc
+            pre Мы создаем бренды, выстраивая для них коммуникационные платформы, создавая
+                    коммуникационные кампании и рекламные продукты. Мы помогаем компаниям найти
+                        своих потребителей через различные медиаканалы и в точках продаж, выделиться
+                            среди конкурентов и донести до аудитории все преимущества своих брендов
+          .about_stats
+            .about_stat
+              .about_stat_info 1993
+              .about_stat_title год основания компании
+            .about_stat
+              .about_stat_info
+                span топ-
+                | 10
+              .about_stat_title креативных агентств россии
+            .about_stat
+              .about_stat_info 113,4
+              .about_stat_title млн $, оборот за 2011 год
+          .about_achievements
+            .about_achievement
+              span 40
+              |  Наград
+            .about_achievement
+              span 304
+              |  Проекта
+            .about_achievement
+              span 485
+              |  Клиентов
+            .about_achievement
+              span 7K+
+              |  Кружек кофе
+          .about_column.about_column__services
+            .about_column_title услуги
+            .about_column_list
+              .about_column_list_item Интегрированные коммуникации
+              .about_column_list_item Интернет разработки
+              .about_column_list_item Коммуникации в области здравоохранения
+              .about_column_list_item Мобильный маркетинг
+              .about_column_list_item Мультимедийные разработки
+              .about_column_list_item Потребительский маркетинг
+              .about_column_list_item Производство кино-, видео- и аудио-продукции
+              .about_column_list_item Производство печатной продукции
+              .about_column_list_item Реклама
+              .about_column_list_item Рекламный креатив
+              .about_column_list_item Связи с общественностью
+              .about_column_list_item Событийный маркетинг
+              .about_column_list_item Создание торговой марки
+              .about_column_list_item Специализированные коммуникации
+              .about_column_list_item Торговый маркетинг
+              .about_column_list_item Управление медийными инвестициями
+              .about_column_list_item Фирменный стиль
+          .about_column.about_column__agencies
+            .about_column_title Агентства группы twiga
+            .about_column_list
+              .about_column_list_item BeWeb
+              .about_column_list_item InTown
+              .about_column_list_item Media Firs
+              .about_column_list_item MedInform
+              .about_column_list_item OGGI
+              .about_column_list_item TT Design
+              .about_column_list_item TWIGA PR
+              .about_column_list_item TWIGA TOUCH
+              .about_column_list_item ПОLЕ
 
-      .page-section.page-section__features
+      .page-section.page-section__contacts
         .container
-          .page_title Наши преимущества
-          .features-list
-            .feature.feature__certificate
-              p Сертифицированный продукт
-            .feature.feature__production
-              p Масштабное производство
-            .feature.feature__stock
-              p Собственный склад
-            .feature.feature__payment
-              p Возможна рассрочка
-            .feature.feature__delivery
-              p Доставка
-          .feature-desc
-            .feature-desc_icon
-              img src='img/icon/feature-production.png'
-            .feature-desc_title Масштабное производство
-            .feature-desc_text На нашем заводе производится большое кол-во продукции. Более 30 кубов в сутки, что выделяет нашу компанию среди конкурентов и делает лидерами по производству строительных материалов на рынке г. Сургут.
-            .feature-desc_btn Оставить заявку
-
-      .page-section.page-section__faq
-        .container
-          .page_title Часто задаваемые вопросы
-          .question-list
-            .question
-              .question_title Сколько стоит доставка?
-              .question_text Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet.
-            .question
-              .question_title Сколько стоит доставка?
-              .question_text Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet.
-            .question
-              .question_title Сколько стоит доставка?
-              .question_text Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet.
-            .question
-              .question_title Сколько стоит доставка?
-              .question_text Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet.
-            .question
-              .question_title Сколько стоит доставка?
-              .question_text Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet.
-
-      #map
+          .page_title Контакты
+          .contacts
+            .contact
+              .contact_city Москва
+              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
+              .contact_phone +7 495 987 35 95
+              .contact_mail info@twiga.ru
+            .contact
+              .contact_city Санкт-петербург
+              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
+              .contact_phone +7 495 987 35 95
+              .contact_mail info@twiga.ru
+            .contact
+              .contact_city Минск
+              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
+              .contact_phone +7 495 987 35 95
+              .contact_mail info@twiga.ru
+            .contact
+              .contact_city Киев
+              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
+              .contact_phone +7 495 987 35 95
+              .contact_mail info@twiga.ru
+            .contact
+              .contact_city Ереван
+              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
+              .contact_phone +7 495 987 35 95
+              .contact_mail info@twiga.ru
+            .contact
+              .contact_city Алматы
+              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
+              .contact_phone +7 495 987 35 95
+              .contact_mail info@twiga.ru
 
       .footer
         .container
-          .footer_contacts
-            span 8 812 345 84 45
-            |  г. Сургут, ул. Ленина 240
           .footer_logo
-            img src='img/icon/logo.png'
-          .main-nav
-            .main-nav_item Главная
-            .main-nav_item Заказать
-            .main-nav_item Вопросы
-            .main-nav_item Оплата
-            .main-nav_item Доставка
-            .main-nav_item Контакты
+            img src='img/icon/footer-logo.png'

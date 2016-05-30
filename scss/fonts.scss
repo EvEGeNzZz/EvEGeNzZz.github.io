@@ -1,13 +1,76 @@
 @font-face {
-  font-family: 'PFDinTextPro';
-  src:         url('../fonts/pfdintextpro-regular.ttf') format('truetype');
+  font-family: 'FuturaLight';
+  src:         url('../fonts/FuturaLight-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style:  normal;
 }
 
 @font-face {
-  font-family: 'PFDinTextPro';
-  src:         url('../fonts/pfdintextpro-bold.ttf') format('truetype');
+  font-family: 'GothamPro';
+  src:         url('../fonts/GothamPro.ttf') format('truetype');
+  font-weight: 400;
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src:         url('../fonts/GothamProBold.otf') format('opentype');
   font-weight: 700;
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src:         url('../fonts/GothamProLight.otf') format('opentype');
+  font-weight: 300;
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src:         url('../fonts/GothamProMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src:         url('../fonts/PlayfairDisplay-BlackItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style:  italic;
+}
+
+@font-face {
+  font-family: 'PT_Sans-Narrow';
+  src:         url('../fonts/PT_Sans-Narrow-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: 'PT_Sans-Regular';
+  src:         url('../fonts/PT_Sans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src:         url('../fonts/MyriadProRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src:         url('../fonts/MyriadProSemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: 'PTMono';
+  src:         url('../fonts/PTMono.ttf') format('truetype');
+  font-weight: 400;
   font-style:  normal;
 }

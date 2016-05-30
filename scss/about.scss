@@ -1,0 +1,163 @@
+.about_title {
+  margin: 75px 0 0;
+  color: #ffc845;
+  padding: 0 0 0 85px;
+  font-family: 'PT_Sans-Regular';
+  font-size: 14px;
+
+  span {
+    text-transform: uppercase;
+    position: absolute;
+    left: 28px;
+
+    &:before {
+      position: absolute;
+      top: -15px;
+      left: -3px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #e0e0e0;
+      transform: rotate(45deg);
+      content: '';
+    }
+  }
+}
+
+.about_desc {
+  margin: 15px 0 0;
+  color: #fff;
+  font-family: 'PT_Sans-Regular';
+  font-size: 18px;
+  padding: 0 0 0 85px;
+}
+
+.about_stats {
+  margin: 200px 0 0;
+}
+
+.about_stat {
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+
+  & + .about_stat {
+    margin-left: 125px;
+  }
+}
+
+.about_stat_info {
+  position: relative;
+  padding: 40px 0 50px;
+  color: #dbad32;
+  font-family: 'PlayfairDisplay';
+  font-size: 48px;
+  font-weight: 800;
+  font-style:  italic;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 46px;
+    display: block;
+    width: 154px;
+    height: 154px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    content: '';
+  }
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 54px;
+    display: block;
+    width: 154px;
+    height: 154px;
+    border: 1px solid #595959;
+    border-radius: 50%;
+    content: '';
+  }
+
+  span {
+    color: #fff;
+    font-size: 36px;
+  }
+}
+
+.about_stat_title {
+  margin: 10px 0 0;
+  color: #fff;
+  font-family: 'PT_Sans-Narrow';
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.about_achievements {
+  margin: 165px 0 0;
+}
+
+.about_achievement {
+  display: inline-block;
+  width: 145px;
+  color: #fff;
+  font-family: 'GothamPro';
+  font-size: 20px;
+  text-align: center;
+
+  &:before {
+    display: block;
+    width: 145px;
+    height: 145px;
+    margin: 0 0 25px;
+    background: #281f11;
+    border: 1px solid #f39c12;
+    border-radius: 50%;
+    content: '';
+  }
+
+  span {
+    display: block;
+    font-size: 38px;
+    font-weight: 700;
+  }
+
+  & + .about_achievement {
+    margin-left: 140px;
+  }
+}
+
+.about_column {
+  margin: 200px 0 0;
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.about_column_title {
+  color: #fff;
+  font-family: 'PT_Sans-Narrow';
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.about_column_list {
+  margin: 50px 0 0;
+  color: #898989;
+  font-family: 'PTMono';
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.about_column_list_item {
+  &:hover {
+    color: #fff;
+  }
+}
+
+.about_column__agencies {
+  .about_column_list_item {
+    margin: 21px 0 0;
+  }
+}

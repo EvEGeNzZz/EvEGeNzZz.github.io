@@ -1,0 +1,81 @@
+.footer {
+  padding: 45px 0 50px;
+  background: #3e454c;
+}
+
+.footer_column {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer_column__desc {
+  margin: 0 0 0 65px;
+}
+
+.footer_column__open {
+  margin: 0 0 0 65px;
+}
+
+.footer_column__learn {
+  margin: 0 0 0 40px;
+}
+
+.footer_column__sub {
+  margin: 0 0 0 30px;
+}
+
+.footer_column_title {
+  color: #697480;
+  font-family: 'OpenSans';
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer_desc {
+  width: 135px;
+  color: #fff;
+  font-family: 'OpenSans';
+  font-size: 12px;
+  opacity: 0.4;
+  line-height: 1.7;
+}
+
+.footer_desc b {
+  font-weight: 700;
+}
+
+.footer_nav {
+  margin: 10px 0 0;
+}
+
+.footer_nav_item {
+  color: #fff;
+  font-family: 'OpenSans';
+  font-size: 12px;
+}
+
+.footer_nav_item + .footer_nav_item {
+  margin: 5px 0 0;
+}
+
+.footer_sub_title {
+  color: #fff;
+  font-family: 'MuseoSansCyrl';
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.footer_sub-form {
+  width: 240px;
+  margin: 18px 0 0;
+  padding: 10px 14px;
+  border: 1px solid #35414e;
+  border-radius: 4px;
+  background: #9c9b99;
+  color: #fff;
+  font-family: 'OpenSans';
+  font-size: 13px;
+}

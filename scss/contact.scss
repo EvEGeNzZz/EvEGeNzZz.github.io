@@ -1,0 +1,39 @@
+.contact {
+  display: inline-block;
+  width: 170px;
+  margin: 65px 0 0;
+  padding: 0 0 0 25px;
+  color: #fff;
+
+  & + .contact {
+    margin-left: 100px;
+  }
+
+  &:nth-child(5n+5) {
+    margin-left: 0;
+  }
+
+  &:nth-child(n+5) {
+    margin-top: 90px;
+  }
+}
+
+.contact_city {
+  font-family: 'MyriadPro';
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.contact_adress, .contact_phone, .contact_mail {
+  font-family: 'MyriadPro';
+  font-size: 16px;
+}
+
+.contact_adress {
+  margin: 15px 0 0;
+}
+
+.contact_phone {
+  margin: 20px 0 0;
+  font-weight: 600;
+}
