@@ -6,96 +6,141 @@ html
 
   body
     .page
-      .container
-        .header
+      .header
+        .container
           .header_logo
             img src='img/icon/logo.png'
-          .login-btn Sing in
-          .cart-btn
-            | Cart
-            span  (2)
-          .search-btn Search
           .main-nav
-            .main-nav_item.is-active Footwear
-            .main-nav_item Clothing
-            .main-nav_item Accessories
-            .main-nav_item Brands
-            .main-nav_item Exclusive
+            .main-nav_item О компании
+            .main-nav_item Работы
+            .main-nav_item Клиенты
+            .main-nav_item Работа у нас
+            .main-nav_item Контакты
+          .header_btn
+            img src='img/icon/header-btn.png'
 
 
-        .product-page
-          .product
-            .product_icon
-              img src='img/icon/product.png'
-            .product_about
-              .product_like
-              .product_mark Nike
-              .product_name AIR MAX TAVAS SD
-              .product_price $ 160.00
-              .product_colors
-                .product_colors_title Colors -
-                a.product_color Black
-                a.product_color Pink Pow
-                a.product_color Tour Yellow
-                a.product_color White
-                .product_colors_previews
-                  .product_colors_preview
-                    img src='img/icon/preview-1.png'
-                  .product_colors_preview
-                    img src='img/icon/preview-2.png'
-              .product_size
-                .product_size_title Size charts
-                .product_size_form Size
-              .product_add_to_cart add to cart
+      .page-section.page-section__main
+        .container
+          .main_logo
+            img src='img/icon/main-logo.png'
+          .main_title
+            | мы делаем
+            span
+              b рекламу
+              |  и
+              b  креатив
 
-        .product-about
-          .product-about_title CLASSIC CUSHIONING. MODERN
-          .product-about_text The Nike Air Max Tavas SD Men's Shoe recalls the profile of the iconic running original with a Max Air unit in the heel and multi-surface Waffle outsole. A lightweight upper and gradient detail offer a comfortable fit and dynamic look.
 
-        .product-info
-          .product-info_box
-            .product-info_box_title Nike
-            .product-info_box_mark Air max Tavas SD
-            .product-info_box_colors
-              .product-info_box_color Black
-              .product-info_box_color Pink Pow
-              .product-info_box_color Tour yellow
-              .product-info_box_color White
-            .product-info_box_img
-              img src='img/icon/product-box.png'
-            .product-info_box_price $160.00
-            .product-info_box_stock En stock
-            .product-info_box_size Size
-            .product-info_box_add_to_cart add to cart
+      .page-section.page-section__about
+        .container
+          .page_title О компании
+          .about_title
+            span TWIGA –
+            pre   крупнейшая независимая коммуникационная группа в России и странах СНГ. Член Ассоциации
+                коммуникационных агентств России (АКАР) с 1997 года.
+          .about_desc
+            pre Мы создаем бренды, выстраивая для них коммуникационные платформы, создавая
+                    коммуникационные кампании и рекламные продукты. Мы помогаем компаниям найти
+                        своих потребителей через различные медиаканалы и в точках продаж, выделиться
+                            среди конкурентов и донести до аудитории все преимущества своих брендов
+          .about_stats
+            .about_stat
+              .about_stat_info 1993
+              .about_stat_title год основания компании
+            .about_stat
+              .about_stat_info
+                span топ-
+                | 10
+              .about_stat_title креативных агентств россии
+            .about_stat
+              .about_stat_info 113,4
+              .about_stat_title млн $, оборот за 2011 год
+          .about_achievements
+            .about_achievement.about_achievement__like
+              span 40
+              |  Наград
+            .about_achievement.about_achievement__projects
+              span 304
+              |  Проекта
+            .about_achievement.about_achievement__users
+              span 485
+              |  Клиентов
+            .about_achievement.about_achievement__cups
+              span 7K+
+              |  Кружек кофе
+          .about_column.about_column__services
+            .about_column_title услуги
+            .about_column_list
+              .about_column_list_item Интегрированные коммуникации
+              .about_column_list_item Интернет разработки
+              .about_column_list_item Коммуникации в области здравоохранения
+              .about_column_list_item Мобильный маркетинг
+              .about_column_list_item Мультимедийные разработки
+              .about_column_list_item Потребительский маркетинг
+              .about_column_list_item Производство кино-, видео- и аудио-продукции
+              .about_column_list_item Производство печатной продукции
+              .about_column_list_item Реклама
+              .about_column_list_item Рекламный креатив
+              .about_column_list_item Связи с общественностью
+              .about_column_list_item Событийный маркетинг
+              .about_column_list_item Создание торговой марки
+              .about_column_list_item Специализированные коммуникации
+              .about_column_list_item Торговый маркетинг
+              .about_column_list_item Управление медийными инвестициями
+              .about_column_list_item Фирменный стиль
+          .about_column.about_column__agencies
+            .about_column_title Агентства группы twiga
+            .about_column_list
+              .about_column_list_item BeWeb
+              .about_column_list_item InTown
+              .about_column_list_item Media Firs
+              .about_column_list_item MedInform
+              .about_column_list_item OGGI
+              .about_column_list_item TT Design
+              .about_column_list_item TWIGA PR
+              .about_column_list_item TWIGA TOUCH
+              .about_column_list_item ПОLЕ
 
-          .product_subtitle Story
-          .product_desc
-            .product_desc_title NIKE AIR MAX ORIGINS
-            .product_desc_text Nike's revolutionary Air-Sole unit made its way into Nike footwear in the late '70s. In 1987, the Nike Air Max 1 debuted with visible air in its heel, allowing fans more than just the feel of Air-Sole comfort
-          .product_benefits
-            .product_subtitle BENEFITS
-            .product_benefit
-              .product_benefit_title Layered textile/synthetic upper
-              .product_benefit_desc for lightweight durability and comfort
-            .product_benefit
-              .product_benefit_title Injected Phylon midsole doubles
-              .product_benefit_desc Outsole to reduce the overall weight of the shoe
-            .product_benefit
-              .product_benefit_title Max Air heel unit
-              .product_benefit_desc delivers maximum lightweight cushioning
-            .product_benefit
-              .product_benefit_title Rubber Waffle outsole
-              .product_benefit_desc Durable, multi-surface traction
+      .page-section.page-section__contacts
+        .container
+          .page_title Контакты
+          .contacts
+            .contact
+              .contact_city Москва
+              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
+              .contact_phone +7 495 987 35 95
+              .contact_mail info@twiga.ru
+            .contact
+              .contact_city Санкт-петербург
+              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
+              .contact_phone +7 495 987 35 95
+              .contact_mail info@twiga.ru
+            .contact
+              .contact_city Минск
+              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
+              .contact_phone +7 495 987 35 95
+              .contact_mail info@twiga.ru
+            .contact
+              .contact_city Киев
+              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
+              .contact_phone +7 495 987 35 95
+              .contact_mail info@twiga.ru
+            .contact
+              .contact_city Ереван
+              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
+              .contact_phone +7 495 987 35 95
+              .contact_mail info@twiga.ru
+            .contact
+              .contact_city Алматы
+              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
+              .contact_phone +7 495 987 35 95
+              .contact_mail info@twiga.ru
+            .contacts_btns
+              .contacts_btn.contacts_btn__presentation Скачать нашу презентацию
+              .contacts_btn.contacts_btn__offer Хотите предложить нам партнерство?
 
-        .product-photos
-          .product_subtitle social
-          .product-photos_title #NIKEAIRMAX
-          .product-photos_list
-            .product-photo
-              img src='img/icon/photo1.jpg'
-            .product-photo
-              img src='img/icon/photo2.jpg'
-            .product-photo
-              img src='img/icon/photo3.jpg'
-            .product-photo
-              img src='img/icon/photo4.jpg'
+      .footer
+        .container
+          .footer_logo
+            img src='img/icon/footer-logo.png'
