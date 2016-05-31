@@ -198,6 +198,8 @@
 }
 
 .about_column_list_item {
+  cursor: pointer;
+
   &:hover {
     color: #fff;
   }

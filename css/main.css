@@ -715,6 +715,10 @@ a {
   line-height: 1.6;
 }
 
+.about_column_list_item {
+  cursor: pointer;
+}
+
 .about_column_list_item:hover {
   color: #fff;
 }
