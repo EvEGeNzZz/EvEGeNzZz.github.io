@@ -10,6 +10,7 @@
 @import 'fonts';
 @import 'contact';
 @import 'about';
+@import 'work';
 
 .page {
   background: #111;
@@ -103,4 +104,38 @@
 .footer {
   padding: 20px 0 115px;
   text-align: center;
+}
+
+.page-section__work {
+  color: #fff;
+
+  .container {
+    width: 1200px;
+  }
+
+  .page_title {
+    margin: 0 0 37px 100px;
+  }
+}
+
+.social_instagram {
+  position: relative;
+  display: block;
+  margin: 29px 0 0;
+  padding: 0 0 0 35px;
+  font-family: 'MyriadPro';
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:before {
+    position: absolute;
+    top: -5px;
+    left: 1px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icon/instagram.png);
+    content: '';
+  }
 }
