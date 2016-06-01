@@ -499,14 +499,15 @@ a {
   font-size: 18px;
   color: #fff;
   text-align: center;
+  cursor: pointer;
 }
 
-.contacts_btn.contacts_btn__presentation {
+.contacts_btn__presentation {
   border: 1px dashed #707070;
   padding: 15px 10px 14px;
 }
 
-.contacts_btn.contacts_btn__presentation:before {
+.contacts_btn__presentation:before {
   position: relative;
   bottom: 3px;
   margin: 0 15px 0 0;
@@ -518,7 +519,7 @@ a {
   content: '';
 }
 
-.contacts_btn.contacts_btn__offer {
+.contacts_btn__offer {
   margin: 20px 0 0;
   padding: 18px 10px 20px;
   background: #e8432e;
@@ -747,10 +748,15 @@ a {
 td {
   vertical-align: middle;
   width: 25%;
+  max-height: 300px;
 }
 
 td img {
   display: block;
+}
+
+.cell__large {
+  width: 50%;
 }
 
 .work_note {
@@ -819,6 +825,7 @@ td img {
   position: absolute;
   top: 58px;
   right: 0px;
+  cursor: pointer;
 }
 
 .main-nav {
@@ -850,17 +857,17 @@ td img {
   color: #ffc845;
   font-family: 'FuturaLight';
   font-size: 30px;
-  letter-spacing: 20px;
+  letter-spacing: 16px;
   text-transform: uppercase;
 }
 
 .main_title span {
-  margin-left: 40px;
+  margin-left: 20px;
   color: #fff;
   font-family: 'GothamPro';
   font-size: 32px;
   font-weight: 300;
-  letter-spacing: 7px;
+  letter-spacing: 3px;
 }
 
 .main_title span b {

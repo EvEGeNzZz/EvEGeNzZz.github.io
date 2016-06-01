@@ -32,6 +32,7 @@
   position: absolute;
   top: 58px;
   right: 0px;
+  cursor: pointer;
 }
 
 .main-nav {
@@ -64,16 +65,16 @@
   color: #ffc845;
   font-family: 'FuturaLight';
   font-size: 30px;
-  letter-spacing: 20px;
+  letter-spacing: 16px;
   text-transform: uppercase;
 
   span {
-    margin-left: 40px;
+    margin-left: 20px;
     color: #fff;
     font-family: 'GothamPro';
     font-size: 32px;
     font-weight: 300;
-    letter-spacing: 7px;
+    letter-spacing: 3px;
 
     b {
       font-weight: 700;

@@ -18,10 +18,15 @@
 td {
   vertical-align: middle;
   width: 25%;
+  max-height: 300px;
 
   img {
     display: block;
   }
+}
+
+.cell__large {
+  width: 50%;
 }
 
 .work_note {
