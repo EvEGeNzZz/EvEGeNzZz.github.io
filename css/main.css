@@ -724,8 +724,54 @@ a {
   color: #fff;
 }
 
+.about_column__agencies {
+  background: url(../img/icon/block-bg.png) 104px 80px no-repeat;
+}
+
 .about_column__agencies .about_column_list_item {
   margin: 22px 0 0;
+}
+
+.about_column__agencies .about_column_list_item.is-active {
+  position: relative;
+  color: #fff;
+}
+
+.about_column__agencies .about_column_list_item.is-active:before {
+  position: absolute;
+  top: 10px;
+  left: -36px;
+  display: block;
+  width: 12px;
+  height: 1px;
+  background: #fff;
+  content: '';
+}
+
+.about_column__services .about_column_list_item.is-active {
+  position: relative;
+}
+
+.about_column__services .about_column_list_item.is-active:before {
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  left: 290px;
+  display: block;
+  height: 1px;
+  background: #fff;
+  content: '';
+}
+
+.about_column__services .about_column_list_item.is-active:after {
+  position: absolute;
+  top: -165px;
+  right: 35px;
+  bottom: 12px;
+  display: block;
+  width: 1px;
+  background: #fff;
+  content: '';
 }
 
 .work {
@@ -759,8 +805,12 @@ td img {
   width: 50%;
 }
 
+.cell__small {
+  vertical-align: top;
+}
+
 .work_note {
-  padding: 0 100px 0 112px;
+  padding: 0 100px 7% 112px;
 }
 
 .work_join {
@@ -803,6 +853,50 @@ td img {
 
 .work_join_note__right {
   right: 45px;
+}
+
+.examples_slider {
+  margin: 72px 0 0;
+}
+
+.examples_slide {
+  color: #fff;
+  font-family: 'GothamPro';
+  text-align: center;
+}
+
+.examples_slide_preview img {
+  display: block;
+}
+
+.examples_slide_title {
+  margin: 25px 0 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.examples_slide_link {
+  margin: 9px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.examples_prev, .examples_next {
+  width: 192.5px;
+  margin: 64px 0 0;
+}
+
+.examples_prev img, .examples_next img {
+  display: block;
+}
+
+.examples_prev {
+  float: left;
+}
+
+.examples_next {
+  float: right;
 }
 
 .page {
@@ -900,6 +994,7 @@ td img {
 }
 
 .page-section__work {
+  padding: 83px 0 10px;
   color: #fff;
 }
 
@@ -927,4 +1022,16 @@ td img {
   height: 24px;
   background: url(../img/icon/instagram.png);
   content: '';
+}
+
+.page-section__examples {
+  padding: 100px 0;
+}
+
+.page-section__examples .container {
+  width: 1200px;
+}
+
+.page-section__examples .page_title {
+  margin: 0 0 0 100px;
 }

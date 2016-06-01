@@ -11,6 +11,7 @@
 @import 'contact';
 @import 'about';
 @import 'work';
+@import 'examples';
 
 .page {
   background: #111;
@@ -108,6 +109,7 @@
 }
 
 .page-section__work {
+  padding: 83px 0 10px;
   color: #fff;
 
   .page_title {
@@ -134,5 +136,17 @@
     height: 24px;
     background: url(../img/icon/instagram.png);
     content: '';
+  }
+}
+
+.page-section__examples {
+  padding: 100px 0;
+
+  .container {
+    width: 1200px;
+  }
+
+  .page_title {
+    margin: 0 0 0 100px;
   }
 }

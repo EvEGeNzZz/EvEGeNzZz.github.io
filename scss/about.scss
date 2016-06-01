@@ -206,7 +206,55 @@
 }
 
 .about_column__agencies {
+  background: url(../img/icon/block-bg.png) 104px 80px no-repeat;
+
   .about_column_list_item {
     margin: 22px 0 0;
+
+    &.is-active {
+      position: relative;
+      color: #fff;
+
+      &:before {
+        position: absolute;
+        top: 10px;
+        left: -36px;
+        display: block;
+        width: 12px;
+        height: 1px;
+        background: #fff;
+        content: '';
+      }
+    }
+  }
+}
+
+.about_column__services {
+  .about_column_list_item {
+    &.is-active {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        top: 10px;
+        right: 35px;
+        left: 290px;
+        display: block;
+        height: 1px;
+        background: #fff;
+        content: '';
+      }
+
+      &:after {
+        position: absolute;
+        top: -165px;
+        right: 35px;
+        bottom: 12px;
+        display: block;
+        width: 1px;
+        background: #fff;
+        content: '';
+      }
+    }
   }
 }

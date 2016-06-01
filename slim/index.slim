@@ -3,6 +3,15 @@ html
   head
     meta charset='utf-8'
     link href='css/main.css' rel='stylesheet'
+    script type="text/javascript" src="javascripts/jquery-2.2.3.min.js"
+    javascript:
+      $(function() {
+        $(".about_column_list_item__style").hover(function(){
+          $(this).toggleClass("is-active"),
+          $(".about_column_list_item__oggi").toggleClass("is-active"),
+          $(".about_column_list_item__tt").toggleClass("is-active");
+        });
+      });
 
   body
     .page
@@ -88,7 +97,7 @@ html
               .about_column_list_item Специализированные коммуникации
               .about_column_list_item Торговый маркетинг
               .about_column_list_item Управление медийными инвестициями
-              .about_column_list_item Фирменный стиль
+              .about_column_list_item.about_column_list_item__style Фирменный стиль
           .about_column.about_column__agencies
             .about_column_title Агентства группы twiga
             .about_column_list
@@ -96,11 +105,25 @@ html
               .about_column_list_item InTown
               .about_column_list_item Media Firs
               .about_column_list_item MedInform
-              .about_column_list_item OGGI
-              .about_column_list_item TT Design
+              .about_column_list_item.about_column_list_item__oggi OGGI
+              .about_column_list_item.about_column_list_item__tt TT Design
               .about_column_list_item TWIGA PR
               .about_column_list_item TWIGA TOUCH
               .about_column_list_item ПОLЕ
+
+      .page-section.page-section__examples
+        .container
+          .page_title Работы
+          .examples_slider
+            .examples_prev
+              img src='img/icon/slide2.png'
+            .examples_next
+              img src='img/icon/slide3.png'
+            .examples_slide
+              .examples_slide_preview
+                img src='img/icon/slide1.png'
+              .examples_slide_title Плакаты для KRUPS  Piccolo
+              .examples_slide_link Подробнее
 
       .page-section.page-section__work
         .work
