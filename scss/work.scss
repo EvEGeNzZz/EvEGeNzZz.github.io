@@ -1,36 +1,31 @@
 .work {
+  max-width: 1200px;
+  margin: 0 auto;
   color: #fff;
+}
+
+.work_about {
+  overflow: hidden;
   font-family: 'PT_Sans-Regular';
   font-size: 16px;
   line-height: 1.2;
-  overflow: hidden;
 }
 
 .work_desc {
-  float: left;
-  width: 50%;
-  padding: 72px 100px 114px;
+  padding: 0 100px;
 }
 
-.work_photo {
-  float: left;
+td {
+  vertical-align: middle;
+  width: 25%;
+
   img {
     display: block;
   }
 }
 
-.work_photo__small {
-  width: 25%;
-}
-
-.work_photo__large {
-  width: 50%;
-}
-
 .work_note {
-  float: left;
-  width: 50%;
-  padding: 104px 100px 115px 112px;
+  padding: 0 100px 0 112px;
 }
 
 .work_join {
@@ -68,9 +63,9 @@
 }
 
 .work_join_note__left {
-  left: 105px;
+  left: 5px;
 }
 
 .work_join_note__right {
-  right: 145px;
+  right: 45px;
 }

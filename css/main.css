@@ -380,7 +380,7 @@ a {
 
 @font-face {
   font-family: 'MyriadPro';
-  src: url("../fonts/MyriadProRegular.ttf") format("truetype");
+  src: url("../fonts/MyriadProRegular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
@@ -728,39 +728,33 @@ a {
 }
 
 .work {
+  max-width: 1200px;
+  margin: 0 auto;
   color: #fff;
+}
+
+.work_about {
+  overflow: hidden;
   font-family: 'PT_Sans-Regular';
   font-size: 16px;
   line-height: 1.2;
-  overflow: hidden;
 }
 
 .work_desc {
-  float: left;
-  width: 50%;
-  padding: 72px 100px 114px;
+  padding: 0 100px;
 }
 
-.work_photo {
-  float: left;
-}
-
-.work_photo img {
-  display: block;
-}
-
-.work_photo__small {
+td {
+  vertical-align: middle;
   width: 25%;
 }
 
-.work_photo__large {
-  width: 50%;
+td img {
+  display: block;
 }
 
 .work_note {
-  float: left;
-  width: 50%;
-  padding: 104px 100px 115px 112px;
+  padding: 0 100px 0 112px;
 }
 
 .work_join {
@@ -798,11 +792,11 @@ a {
 }
 
 .work_join_note__left {
-  left: 105px;
+  left: 5px;
 }
 
 .work_join_note__right {
-  right: 145px;
+  right: 45px;
 }
 
 .page {
@@ -818,13 +812,13 @@ a {
 .header_logo {
   position: absolute;
   top: 25px;
-  left: -70px;
+  left: 0px;
 }
 
 .header_btn {
   position: absolute;
   top: 58px;
-  right: -70px;
+  right: 0px;
 }
 
 .main-nav {
@@ -900,10 +894,6 @@ a {
 
 .page-section__work {
   color: #fff;
-}
-
-.page-section__work .container {
-  width: 1200px;
 }
 
 .page-section__work .page_title {
