@@ -1,0 +1,32 @@
+.main-nav {
+  margin: 0 0 0 32px;
+  color: #062033;
+  font-family: 'OpenSans';
+  font-size: 12px;
+}
+
+.main-nav_item {
+  position: relative;
+  display: inline-block;
+  padding: 15px 0;
+  vertical-align: top;
+
+  & + .main-nav_item {
+    margin-left: 23px;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      height: 3px;
+      background: #ff7f66;
+      content: '';
+    }
+  }
+}

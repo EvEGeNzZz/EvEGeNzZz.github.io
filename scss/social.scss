@@ -1,0 +1,66 @@
+.social-btns {
+  margin: 13px 0 0;
+}
+
+.social-btn {
+  display: inline-block;
+  padding: 4px 10px 3px;
+  border-radius: 2px;
+  font-family: 'PFAgoraSansPro';
+  font-size: 12px;
+  color: #fff;
+
+  & + .social-btn {
+    margin-left: 8px;
+  }
+
+  &:before {
+    display: inline-block;
+    height: 10px;
+    margin: 0 7px 0 0;
+    content: '';
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.social_vk {
+  background: #43658f;
+
+  &:before {
+    width: 8px;
+    background: url(../img/icon/share-vk.png);
+  }
+
+  &:hover {
+    background: #375375;
+  }
+}
+
+.social_fb {
+  background: #39579a;
+
+  &:before {
+    width: 5px;
+    background: url(../img/icon/share-fb.png);
+  }
+
+  &:hover {
+    background: #2f4980;
+  }
+}
+
+.social_tw {
+  background: #00abf0;
+
+  &:before {
+    width: 10px;
+    background: url(../img/icon/share-tw.png);
+  }
+
+  &:hover {
+    background: #009ad6;
+  }
+}

@@ -1,76 +1,55 @@
 @font-face {
-  font-family: 'FuturaLight';
-  src:         url('../fonts/FuturaLight.ttf') format('truetype');
+  font-family: 'FuturaNewDemi';
+  src:         url('../fonts/FuturaNewDemi.otf') format('opentype');
   font-weight: 400;
   font-style:  normal;
 }
 
 @font-face {
-  font-family: 'GothamPro';
-  src:         url('../fonts/GothamPro.ttf') format('truetype');
-  font-weight: 400;
-  font-style:  normal;
-}
-
-@font-face {
-  font-family: 'GothamPro';
-  src:         url('../fonts/GothamProBold.otf') format('opentype');
+  font-family: 'OpenSans';
+  src:         url('../fonts/OpenSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style:  normal;
 }
 
 @font-face {
-  font-family: 'GothamPro';
-  src:         url('../fonts/GothamProLight.otf') format('opentype');
+  font-family: 'OpenSans';
+  src:         url('../fonts/OpenSans-Light.ttf') format('truetype');
   font-weight: 300;
   font-style:  normal;
 }
 
 @font-face {
-  font-family: 'GothamPro';
-  src:         url('../fonts/GothamProMedium.otf') format('opentype');
-  font-weight: 500;
-  font-style:  normal;
-}
-
-@font-face {
-  font-family: 'PlayfairDisplay';
-  src:         url('../fonts/PlayfairDisplay-BlackItalic.ttf') format('truetype');
-  font-weight: 800;
-  font-style:  italic;
-}
-
-@font-face {
-  font-family: 'PT_Sans-Narrow';
-  src:         url('../fonts/PT_Sans-Narrow-Regular.ttf') format('truetype');
+  font-family: 'OpenSans';
+  src:         url('../fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style:  normal;
 }
 
 @font-face {
-  font-family: 'PT_Sans-Regular';
-  src:         url('../fonts/PT_Sans-Regular.ttf') format('truetype');
+  font-family: 'PFAgoraSansPro';
+  src:         url('../fonts/PFAgoraSansPro.ttf') format('truetype');
   font-weight: 400;
   font-style:  normal;
 }
 
 @font-face {
-  font-family: 'MyriadPro';
-  src:         url('../fonts/MyriadProRegular.otf') format('opentype');
+  font-family: 'PTSansCaption';
+  src:         url('../fonts/PT_Sans-Caption-Web-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: 'PTSansCaption';
+  src:         url('../fonts/PT_Sans-Caption-Web-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style:  normal;
 }
 
 @font-face {
-  font-family: 'MyriadPro';
-  src:         url('../fonts/MyriadProSemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style:  normal;
-}
-
-@font-face {
-  font-family: 'PTMono';
-  src:         url('../fonts/PTMono.ttf') format('truetype');
-  font-weight: 400;
+  font-family: 'MuseoSansCyrl';
+  src:         url('../fonts/MuseoSansCyrl.otf') format('opentype');
+  font-weight: 700;
   font-style:  normal;
 }

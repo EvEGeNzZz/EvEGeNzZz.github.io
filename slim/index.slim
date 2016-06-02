@@ -6,10 +6,11 @@ html
     script type="text/javascript" src="javascripts/jquery-2.2.3.min.js"
     javascript:
       $(function() {
-        $(".about_column_list_item__style").hover(function(){
-          $(this).toggleClass("is-active"),
-          $(".about_column_list_item__oggi").toggleClass("is-active"),
-          $(".about_column_list_item__tt").toggleClass("is-active");
+        $(".search-form_input").focus(function(){
+          $(".search-form").addClass("is-active");
+        });
+        $(".search-form_input").blur(function(){
+          $(".search-form").removeClass("is-active");
         });
       });
 
@@ -19,179 +20,93 @@ html
         .container
           .header_logo
             img src='img/icon/logo.png'
+          .language
+            img src='img/icon/language.png'
           .main-nav
-            .main-nav_item О компании
-            .main-nav_item Работы
-            .main-nav_item Клиенты
-            .main-nav_item Работа у нас
-            .main-nav_item Контакты
-          .header_btn
-            img src='img/icon/header-btn.png'
+            .main-nav_item События
+            .main-nav_item Истории
+            .main-nav_item Обмен танцорами
+            .main-nav_item Фото дня
+            .main-nav_item Фраза дня
+            .main-nav_item
+          .search-form
+            input.search-form_input placeholder="Найти город"
+          .login-btn Вход
 
 
-      .page-section.page-section__main
+      .page_dance
         .container
-          .main_logo
-            img src='img/icon/main-logo.png'
-          .main_title
-            | мы делаем
+          .page_title
+            b Танцуй
+            |  и
+            b  путешествуй!
+          .page_subtitle
+            | Пригласи крутого хореографа в свой город.
+            span Преподавай танцы в городе мечты
+          .video-btn
+            | Смотреть видео
             span
-              b рекламу
-              |  и
-              b  креатив
+          .page_desc
+            b World Dance Travel
+            |  — сообщество людей, увлеченных танцем и жаждущих путешествовать. Мы объединяем всех хореографов, готовых ехать в новые города/страны, и студии, которые готовы оплатить проезд и проживание мастера в обмен на бесплатные уроки
+          .social-btns
+            .social-btn.social_vk 33
+            .social-btn.social_fb 24
+            .social-btn.social_tw 0
 
 
-      .page-section.page-section__about
+      .page_find
         .container
-          .page_title О компании
-          .about_title
-            span TWIGA –
-            pre   крупнейшая независимая коммуникационная группа в России и странах СНГ. Член Ассоциации
-                коммуникационных агентств России (АКАР) с 1997 года.
-          .about_desc
-            pre Мы создаем бренды, выстраивая для них коммуникационные платформы, создавая
-                    коммуникационные кампании и рекламные продукты. Мы помогаем компаниям найти
-                        своих потребителей через различные медиаканалы и в точках продаж, выделиться
-                            среди конкурентов и донести до аудитории все преимущества своих брендов
-          .about_stats
-            .about_stat
-              .about_stat_info 1993
-              .about_stat_title год основания компании
-            .about_stat
-              .about_stat_info
-                span топ-
-                | 10
-              .about_stat_title креативных агентств россии
-            .about_stat
-              .about_stat_info 113,4
-              .about_stat_title млн $, оборот за 2011 год
-          .about_achievements
-            .about_achievement.about_achievement__like
-              span 40
-              |  Наград
-            .about_achievement.about_achievement__projects
-              span 304
-              |  Проекта
-            .about_achievement.about_achievement__users
-              span 485
-              |  Клиентов
-            .about_achievement.about_achievement__cups
-              span 7K+
-              |  Кружек кофе
-          .about_column.about_column__services
-            .about_column_title услуги
-            .about_column_list
-              .about_column_list_item Интегрированные коммуникации
-              .about_column_list_item Интернет разработки
-              .about_column_list_item Коммуникации в области здравоохранения
-              .about_column_list_item Мобильный маркетинг
-              .about_column_list_item Мультимедийные разработки
-              .about_column_list_item Потребительский маркетинг
-              .about_column_list_item Производство кино-, видео- и аудио-продукции
-              .about_column_list_item Производство печатной продукции
-              .about_column_list_item Реклама
-              .about_column_list_item Рекламный креатив
-              .about_column_list_item Связи с общественностью
-              .about_column_list_item Событийный маркетинг
-              .about_column_list_item Создание торговой марки
-              .about_column_list_item Специализированные коммуникации
-              .about_column_list_item Торговый маркетинг
-              .about_column_list_item Управление медийными инвестициями
-              .about_column_list_item.about_column_list_item__style.is-active Фирменный стиль
-          .about_column.about_column__agencies
-            .about_column_title Агентства группы twiga
-            .about_column_list
-              .about_column_list_item BeWeb
-              .about_column_list_item InTown
-              .about_column_list_item Media Firs
-              .about_column_list_item MedInform
-              .about_column_list_item.about_column_list_item__oggi.is-active OGGI
-              .about_column_list_item.about_column_list_item__tt.is-active TT Design
-              .about_column_list_item TWIGA PR
-              .about_column_list_item TWIGA TOUCH
-              .about_column_list_item ПОLЕ
+          img src='img/icon/artwork-2.png'
+          .page_title
+            | Находи студии и хореографов по
+            span  всему миру
+          .page_desc
+            b WDT
+            |  — это место, где любой человек, интересующийся танцами, сможет найти для себя информацию о всех студиях своего города, хореографах и командах, которые танцуют в его городе.
 
-      .page-section.page-section__examples
+      .page_create
         .container
-          .page_title Работы
-          .examples_slider
-            .examples_prev
-              img src='img/icon/slide2.png'
-            .examples_next
-              img src='img/icon/slide3.png'
-            .examples_slide
-              .examples_slide_preview
-                img src='img/icon/slide1.png'
-              .examples_slide_title Плакаты для KRUPS  Piccolo
-              .examples_slide_link Подробнее
+          img src='img/icon/artwork-3.png'
+          .page_title
+            b Создавай
+            |  и
+            i  участвуй
+            span в международных и локальных танцевальных событиях
+          .page_desc Узнавай о всех событиях в мире танца: вечеринки в клубах, дни открытых дверей в студиях, флешмобы, концерты, соревнования, батлы, международные фестивали
 
-      .page-section.page-section__work
-        .work
-          .page_title Работа у нас
-          .work_about
-            table
-              tr
-                td.work_desc.cell__large Ровно 21 год назад с регистрации ТОО "Твига" началась история TWIGA Group. За это время все выучили, что TWIGA - это не аббревиатура, а иностранное слово на языке суахили; это настоящая семья, а не просто коллектив; это интересные будни и яркие футбольные/субботничные/детские выходные.
-                td.cell__small
-                  img src='img/icon/photo-s-1.jpg'
-                td.cell__small
-                  img src='img/icon/photo-s-2.jpg'
-              tr
-                td.cell__large rowspan="2"
-                  img src='img/icon/photo-l.jpg'
-                td.cell__small
-                  img src='img/icon/photo-s-3.jpg'
-                td.cell__small
-                  img src='img/icon/photo-s-4.jpg'
-              tr
-                td.work_note colspan="2"
-                  | Что самое приятное - в этом возрасте все только начинается. С праздником, твиговчане!
-                  a.social_instagram Остальное в Instagram
-
-          .work_join
-            .work_join_btn хочу работать с вами
-            .work_join_note.work_join_note__left Хотите работать в одной из групп TWIGA?
-            .work_join_note.work_join_note__right Хотите предложить нам партнерство?
-
-      .page-section.page-section__contacts
-        .container
-          .page_title Контакты
-          .contacts
-            .contact
-              .contact_city Москва
-              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
-              .contact_phone +7 495 987 35 95
-              .contact_mail info@twiga.ru
-            .contact
-              .contact_city Санкт-петербург
-              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
-              .contact_phone +7 495 987 35 95
-              .contact_mail info@twiga.ru
-            .contact
-              .contact_city Минск
-              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
-              .contact_phone +7 495 987 35 95
-              .contact_mail info@twiga.ru
-            .contact
-              .contact_city Киев
-              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
-              .contact_phone +7 495 987 35 95
-              .contact_mail info@twiga.ru
-            .contact
-              .contact_city Ереван
-              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
-              .contact_phone +7 495 987 35 95
-              .contact_mail info@twiga.ru
-            .contact
-              .contact_city Алматы
-              .contact_adress 105120,  4-й Сыромятнический переулок, дом 1/8, строение 6
-              .contact_phone +7 495 987 35 95
-              .contact_mail info@twiga.ru
-            .contacts_btns
-              .contacts_btn.contacts_btn__presentation Скачать нашу презентацию
-              .contacts_btn.contacts_btn__offer Хотите предложить нам партнерство?
 
       .footer
         .container
-          .footer_logo
+          .footer-logo
             img src='img/icon/footer-logo.png'
+          .footer_column.footer_column__desc
+            .footer_desc
+              b WDT
+              |  — сообщество людей, увлеченных танцем и жаждущих путешествовать. Мы объединяем всех хореографов, студий и команд.
+          .footer_column.footer_column__open
+            .footer_column_title Открывай
+            .footer_nav
+              .footer_nav_item События
+              .footer_nav_item Истории
+              .footer_nav_item Обмен танцорами
+              .footer_nav_item Фото дня
+              .footer_nav_item Фраза дня
+          .footer_column.footer_column__learn
+            .footer_column_title Узнавай
+            .footer_nav
+              .footer_nav_item О проекте
+              .footer_nav_item Контакты
+              .footer_nav_item Помощь
+              .footer_nav_item Пресс-центр
+              .footer_nav_item Рекламодателям
+          .footer_column.footer_column__sub
+            .footer_sub
+              .footer_sub_title Хочешь быть первым?
+              .footer_sub-form
+                input placeholder="Введите ваш e-mail"
+                span
+            .footer_socials
+              a.footer_social.footer_social__vk
+              a.footer_social.footer_social__tw
+              a.footer_social.footer_social__fb
