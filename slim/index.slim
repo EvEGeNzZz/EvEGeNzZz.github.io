@@ -3,110 +3,86 @@ html
   head
     meta charset='utf-8'
     link href='css/main.css' rel='stylesheet'
-    script type="text/javascript" src="javascripts/jquery-2.2.3.min.js"
-    javascript:
-      $(function() {
-        $(".search-form_input").focus(function(){
-          $(".search-form").addClass("is-active");
-        });
-        $(".search-form_input").blur(function(){
-          $(".search-form").removeClass("is-active");
-        });
-      });
 
   body
     .page
       .header
+        .login-btn Login
+        .about-btn About
+        .header_logo
+          | Public
+          span Radio
+        .main-nav
+          .main-nav_item.is-active Popular
+          .main-nav_item My favourite
+        .search-form
+          input.search-form_input placeholder="Search"
+          .search-btn
+      .page-content
         .container
-          .header_logo
-            img src='img/icon/logo.png'
-          .language
-            img src='img/icon/language.png'
-          .main-nav
-            .main-nav_item События
-            .main-nav_item Истории
-            .main-nav_item Обмен танцорами
-            .main-nav_item Фото дня
-            .main-nav_item Фраза дня
-            .main-nav_item
-          .search-form
-            input.search-form_input placeholder="Найти город"
-          .login-btn Вход
-
-
-      .page_dance
-        .container
-          .page_title
-            b Танцуй
-            |  и
-            b  путешествуй!
-          .page_subtitle
-            | Пригласи крутого хореографа в свой город.
-            span Преподавай танцы в городе мечты
-          .video-btn
-            | Смотреть видео
-            span
-          .page_desc
-            b World Dance Travel
-            |  — сообщество людей, увлеченных танцем и жаждущих путешествовать. Мы объединяем всех хореографов, готовых ехать в новые города/страны, и студии, которые готовы оплатить проезд и проживание мастера в обмен на бесплатные уроки
-          .social-btns
-            .social-btn.social_vk 33
-            .social-btn.social_fb 24
-            .social-btn.social_tw 0
-
-
-      .page_find
-        .container
-          img src='img/icon/artwork-2.png'
-          .page_title
-            | Находи студии и хореографов по
-            span  всему миру
-          .page_desc
-            b WDT
-            |  — это место, где любой человек, интересующийся танцами, сможет найти для себя информацию о всех студиях своего города, хореографах и командах, которые танцуют в его городе.
-
-      .page_create
-        .container
-          img src='img/icon/artwork-3.png'
-          .page_title
-            b Создавай
-            |  и
-            i  участвуй
-            span в международных и локальных танцевальных событиях
-          .page_desc Узнавай о всех событиях в мире танца: вечеринки в клубах, дни открытых дверей в студиях, флешмобы, концерты, соревнования, батлы, международные фестивали
-
-
+          .radio-list
+            .radio-preview.in-vk.is-favorite
+              .radio-preview_img
+                img src='img/icon/album1.jpg'
+              .radio-preview_fav
+              .radio-preview_title Pop Music
+            .radio-preview.in-vk
+              .radio-preview_img
+                img src='img/icon/album2.jpg'
+              .radio-preview_fav
+              .radio-preview_title Radionite
+            .radio-preview.is-playing
+              .radio-preview_img
+                img src='img/icon/album3.jpg'
+              .radio-preview_fav
+              .radio-preview_title Chilling With Friends
+            .radio-preview.in-vk
+              .radio-preview_img
+                img src='img/icon/album4.jpg'
+              .radio-preview_fav
+              .radio-preview_title Music Is Life
+            .radio-preview
+              .radio-preview_img
+                img src='img/icon/album5.jpg'
+              .radio-preview_fav
+              .radio-preview_title Party Nights
+            .radio-preview
+              .radio-preview_img
+                img src='img/icon/album6.jpg'
+              .radio-preview_fav
+              .radio-preview_title Country Music
+            .radio-preview.in-vk
+              .radio-preview_img
+                img src='img/icon/album7.jpg'
+              .radio-preview_fav
+              .radio-preview_title In Da Club
+            .radio-preview
+              .radio-preview_img
+                img src='img/icon/album8.jpg'
+              .radio-preview_fav
+              .radio-preview_title Chillout
+            .radio-preview
+              .radio-preview_img
+                img src='img/icon/album9.jpg'
+              .radio-preview_fav
+              .radio-preview_title
+                | I remember real
+                br Hip-Hop
+            .radio-preview.in-vk
+              .radio-preview_img
+                img src='img/icon/album10.jpg'
+              .radio-preview_fav
+              .radio-preview_title Drum`n`Bass
       .footer
-        .container
-          .footer-logo
-            img src='img/icon/footer-logo.png'
-          .footer_column.footer_column__desc
-            .footer_desc
-              b WDT
-              |  — сообщество людей, увлеченных танцем и жаждущих путешествовать. Мы объединяем всех хореографов, студий и команд.
-          .footer_column.footer_column__open
-            .footer_column_title Открывай
-            .footer_nav
-              .footer_nav_item События
-              .footer_nav_item Истории
-              .footer_nav_item Обмен танцорами
-              .footer_nav_item Фото дня
-              .footer_nav_item Фраза дня
-          .footer_column.footer_column__learn
-            .footer_column_title Узнавай
-            .footer_nav
-              .footer_nav_item О проекте
-              .footer_nav_item Контакты
-              .footer_nav_item Помощь
-              .footer_nav_item Пресс-центр
-              .footer_nav_item Рекламодателям
-          .footer_column.footer_column__sub
-            .footer_sub
-              .footer_sub_title Хочешь быть первым?
-              .footer_sub-form
-                input placeholder="Введите ваш e-mail"
-                span
-            .footer_socials
-              a.footer_social.footer_social__vk
-              a.footer_social.footer_social__tw
-              a.footer_social.footer_social__fb
+        .player
+          .player_volume
+            .player_volume_off
+            .player_volume_controls
+          .player_pic
+            img src='img/icon/player-album.jpg'
+          .player_title
+            .player_title_name You're The One I Need [Particular...
+            .player_title_autor Barry White
+          .player_add-btn
+          .player_social VKontakte Public`s Name
+          .player_control-btn

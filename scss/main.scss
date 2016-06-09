@@ -8,161 +8,138 @@
 @import 'modules/mixins';
 
 @import 'fonts';
-
-@import 'social';
-@import 'main-nav';
-@import 'page';
-@import 'footer';
+@import 'radio-preview';
+@import 'player';
 
 .container {
-  width: 940px;
+  width: 1080px;
   margin: 0 auto;
 }
 
-input {
-  outline: none;
-}
-
-.header_logo, .language, .main-nav, .search-form, .login-btn {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.language {
-  position: relative;
-  margin: 14px 0 0 27px;
-  border: 1px solid #f5f5f5;
-
-  &:before {
-    @include triangle(t, #3e454c, 4px, 3px);
-    position: absolute;
-    top: 5px;
-    left: -10px;
-    display: block;
-    content: '';
-  }
-
-  img {
-    display: block;
-  }
+.header {
+  background: #1f1b1b;
+  border-bottom: #1a1515;
 }
 
 .header_logo {
-  margin: 10px 0 0;
+  display: inline-block;
+  padding: 12px 0 0 17px;
+  color: #f2f2f2;
+  font-family: 'SFUIText';
+  font-size: 22px;
+  vertical-align: top;
 
-  img {
-    display: block;
+  span {
+    color: #ff192e;
   }
 }
 
-.search-form {
+.main-nav {
   position: relative;
-  margin: 9px 0 0 112px;
+  display: inline-block;
+  margin: 0 0 0 19px;
+  vertical-align: top;
 
-  input {
-    width: 150px;
-    padding: 8px 10px 5px 22px;
-    background: #ebeced;
-    border: none;
-    border-radius: 4px;
-    color: #062033;
-    font-size: 12px;
-
-    &:hover {
-      background: #e6e6e6;
-    }
-  }
-
-  &:before {
+  &:after {
     position: absolute;
-    top: 7px;
-    left: 9px;
-    width: 8px;
-    height: 12px;
+    top: 9px;
+    bottom: 10px;
+    right: 0;
     display: block;
-    background: url(../img/icon/city.png);
+    width: 1px;
+    background: #2f2b2b;
     content: '';
   }
+}
+
+.main-nav_item {
+  display: inline-block;
+  padding: 16px 37px 17px;
+  color: #fff;
+  font-family: 'SFUIText';
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
 
   &.is-active {
-    input {
-      background: #fff;
-    }
-
-    &:before {
-      background: url(../img/icon/city-active.png);
-    }
+    position: relative;
+    background: #2b2525;
 
     &:after {
       position: absolute;
-      bottom: 2px;
-      right: 10px;
-      left: 10px;
+      right: 0;
+      bottom: 0;
+      left: 0;
       display: block;
-      height: 1px;
-      background: #ff7f66;
+      height: 2px;
+      background: #ff192e;
       content: '';
     }
   }
+}
+
+.page-content {
+  background: url(../img/background.jpg) center center no-repeat;
+}
+
+.footer {
+  background: #211d1d;
+  border-top: 1px solid #642424;
+}
+
+.radio-list {
+  margin: 0 -10px;
+  padding: 14px 0 9px;
+}
+
+.search-form {
+  margin: 10px 0 0 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.search-form_input {
+  padding: 7px 12px;
+  background: #231e1e;
+  border: 1px solid #423b3b;
+  border-radius: 14px;
+  outline: none;
+  color: #757575;
+  font-family: 'SFUIText';
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.search-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/icon/search.png);
+  content: '';
+}
+
+.login-btn, .about-btn {
+  float: right;
+  font-family: 'SFUIText';
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .login-btn {
-  position: relative;
-  margin: 13px 0 0 46px;
-  color: #ff7f66;
-  font-family: 'OpenSans';
-  font-size: 13px;
-  font-weight: 700;
-
-  &:before {
-    position: absolute;
-    top: 3px;
-    left: -17px;
-    display: block;
-    width: 12px;
-    height: 12px;
-    background: url(../img/icon/login.png);
-    content: '';
-  }
-}
-
-.video-btn {
-  position: relative;
-  display: block;
-  width: 187px;
-  margin: 35px auto;
-  padding: 9px 17px;
-  background: #f5db6a;
-  border: 1px solid #e4cc63;
-  border-radius: 4px;
-  color: #3e454c;
-  font-family: 'FuturaNewDemi';
-  font-size: 14px;
-  text-transform: uppercase;
-  text-align: left;
+  margin: 9px 20px;
+  padding: 7px 20px;
+  background: #303030;
+  border: 1px solid #404040;
+  border-radius: 2px;
+  color: #fff;
   cursor: pointer;
-
-  span {
-    position: absolute;
-    top: -1px;
-    right: -1px;
-    display: block;
-    width: 37px;
-    height: 37px;
-    padding: 8px 10px 9px 14px;
-    background: #f2d03b;
-    border: 1px solid #e1c137;
-    border-radius: 0 4px 4px 0;
-    border-left: none;
-    content: '';
-
-    &:before {
-      display: block;
-      width: 13px;
-      height: 18px;
-      background: url(../img/icon/play-video.png);
-      content: '';
-    }
-  }
 }
 
+.about-btn {
+  margin: 17px 10px 0 0;
+  color: #757575;
+  cursor: pointer;
+}
