@@ -5,84 +5,29 @@ html
     link href='css/main.css' rel='stylesheet'
 
   body
-    .page
-      .header
-        .login-btn Login
-        .about-btn About
-        .header_logo
-          | Public
-          span Radio
-        .main-nav
-          .main-nav_item.is-active Popular
-          .main-nav_item My favourite
-        .search-form
-          input.search-form_input placeholder="Search"
-          .search-btn
-      .page-content
-        .container
-          .radio-list
-            .radio-preview.in-vk.is-favorite
-              .radio-preview_img
-                img src='img/icon/album1.jpg'
-              .radio-preview_fav
-              .radio-preview_title Pop Music
-            .radio-preview.in-vk
-              .radio-preview_img
-                img src='img/icon/album2.jpg'
-              .radio-preview_fav
-              .radio-preview_title Radionite
-            .radio-preview.is-playing
-              .radio-preview_img
-                img src='img/icon/album3.jpg'
-              .radio-preview_fav
-              .radio-preview_title Chilling With Friends
-            .radio-preview.in-vk
-              .radio-preview_img
-                img src='img/icon/album4.jpg'
-              .radio-preview_fav
-              .radio-preview_title Music Is Life
-            .radio-preview
-              .radio-preview_img
-                img src='img/icon/album5.jpg'
-              .radio-preview_fav
-              .radio-preview_title Party Nights
-            .radio-preview
-              .radio-preview_img
-                img src='img/icon/album6.jpg'
-              .radio-preview_fav
-              .radio-preview_title Country Music
-            .radio-preview.in-vk
-              .radio-preview_img
-                img src='img/icon/album7.jpg'
-              .radio-preview_fav
-              .radio-preview_title In Da Club
-            .radio-preview
-              .radio-preview_img
-                img src='img/icon/album8.jpg'
-              .radio-preview_fav
-              .radio-preview_title Chillout
-            .radio-preview
-              .radio-preview_img
-                img src='img/icon/album9.jpg'
-              .radio-preview_fav
-              .radio-preview_title
-                | I remember real
-                br Hip-Hop
-            .radio-preview.in-vk
-              .radio-preview_img
-                img src='img/icon/album10.jpg'
-              .radio-preview_fav
-              .radio-preview_title Drum`n`Bass
-      .footer
-        .player
-          .player_volume
-            .player_volume_off
-            .player_volume_controls
-          .player_pic
-            img src='img/icon/player-album.jpg'
-          .player_title
-            .player_title_name You're The One I Need [Particular...
-            .player_title_autor Barry White
-          .player_add-btn
-          .player_social VKontakte Public`s Name
-          .player_control-btn
+    .sidebar
+      .main-title
+        | HumanDesign
+        span We create the future
+      ol.main-nav
+        li.main-nav_item
+          p Информация
+        li.main-nav_item.is-active
+          p внешность
+        li.main-nav_item
+          p физические качества
+        li.main-nav_item
+          p Способности
+        li.main-nav_item
+          p темперамент
+        li.main-nav_item
+          p характер
+      .progress
+        | выполнено:
+        span  30%
+        .progress-bar
+    .content
+      .control-panel
+        .btn-help Нужна помощь?
+        .btn-accept Применить
+        .btn-cancel Отменить
