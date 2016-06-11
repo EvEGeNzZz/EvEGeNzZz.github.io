@@ -6,12 +6,10 @@ html
 
   body
     .sidebar
-      .main-title
-        | HumanDesign
-        span We create the future
+      .sidebar_note Теперь Вам необходимо определить внешние параметры будущего ребенка
       ol.main-nav
-        li.main-nav_item
-          p Информация
+        li.main-nav_item.is-completed
+          p пол
         li.main-nav_item.is-active
           p внешность
         li.main-nav_item
@@ -22,12 +20,60 @@ html
           p темперамент
         li.main-nav_item
           p характер
-      .progress
-        | выполнено:
-        span  30%
-        .progress-bar
     .content
-      .control-panel
-        .btn-help Нужна помощь?
-        .btn-accept Применить
-        .btn-cancel Отменить
+      .content_header
+        .main-title HumanDesign
+        .age
+          .age_setting
+            | Возраст:
+            span  20 лет
+          .age_help
+            .age_help_text Вы можете изменить возраст ребенка
+            .age_help_close Скрыть
+      .editor
+        .editor_nav
+          .editor_nav_item тело
+          .editor_nav_item.is-opened
+            | лицо
+            .editor_subnav
+              .editor_subnav_item волосы
+              .editor_subnav_item брови
+              .editor_subnav_item.is-active глаза
+              .editor_subnav_item нос
+              .editor_subnav_item губы
+              .editor_subnav_item уши
+              .editor_subnav_item форма лица
+              .editor_subnav_item подбородок
+        .editor_preview
+          .editor_preview_pic
+            img src='img/icon/editor-pic.png'
+          .editor_preview_spin
+            img src='img/icon/editor-spin.png'
+          .editor_preview_scale
+            .editor_preview_scale_minus
+            .editor_preview_scale_value 50%
+            .editor_preview_scale_plus
+        .editor_controls
+          .editor_control.editor_control__space
+            .editor_control_value 50
+            .editor_control_bar
+              span style='width: 71px;'
+            .editor_control_title Расстояние между глаз
+          .editor_control.editor_control__size
+            .editor_control_value 32
+            .editor_control_bar
+              span style='width: 51px;'
+            .editor_control_title Размер глаз
+          .editor_control.editor_control__color
+            .editor_control_colors
+              .editor_control_color style='background: #6a310f'
+              .editor_control_color.is-active style='background: #448ccb'
+              .editor_control_color style='background: #97b538'
+              .editor_control_color style='background: #998675'
+            .editor_control_title цвет глаз
+          .editor_control.editor_control__form
+            .editor_control_form
+              | Приподнятые
+              .editor_control_form_prev
+              .editor_control_form_next
+            .editor_control_title Форма глаз
