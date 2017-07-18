@@ -1,0 +1,90 @@
+//@import 'libraries';
+
+@import 'modules/helpers';
+@import 'modules/reset';
+@import 'modules/tune';
+@import 'modules/core-components';
+@import 'modules/animation';
+@import 'modules/mixins';
+
+@import 'fonts';
+@import 'preview';
+@import 'order';
+@import 'feature';
+@import 'question';
+@import 'header';
+@import 'footer';
+@import 'page_column';
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.header_logo, .main-nav {
+  display: inline-block;
+}
+
+.main-nav {
+  margin: 0 0 0 94px;
+  color: #747a7a;
+  font-family: 'Tahoma';
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.main-nav_item {
+  display: inline-block;
+  padding: 29px 0 33px;
+
+  &.is-active {
+    color: #3c3d42;
+  }
+
+  & + .main-nav_item {
+    margin-left: 36px;
+  }
+}
+
+.page_title {
+  color: #636c6c;
+  font-family: 'PFDinTextPro';
+  font-size: 36px;
+}
+
+.page-section__products {
+  padding: 30px 0 70px;
+}
+
+.page-section__order {
+  padding: 49px 0 47px;
+  background: #5db057;
+  background-image: url(../img/icon/slide-bg.png);
+  background-position:  left bottom;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.page-section__features {
+  padding: 30px 0 55px;
+}
+
+.page-section__faq {
+  padding: 30px 0 95px;
+  background: #f1fdf6;
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+.page-section__special {
+  background: url(../img/icon/edge-pattern-top.png) top left repeat-x, url(../img/icon/edge-pattern-bottom.png) bottom left repeat-x;
+  background-color: #ebefef;
+  padding: 57px 0 67px;
+}
+
+input {
+  outline: none;
+}

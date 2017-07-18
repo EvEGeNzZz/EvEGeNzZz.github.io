@@ -1,0 +1,149 @@
+//@import 'libraries';
+
+@import 'modules/helpers';
+@import 'modules/reset';
+@import 'modules/tune';
+@import 'modules/core-components';
+@import 'modules/animation';
+@import 'modules/mixins';
+
+@import 'fonts';
+@import 'radio-preview';
+@import 'player';
+
+body {
+  min-width: 1280px;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #1f1b1b;
+  border-bottom: #1a1515;
+}
+
+.header_logo {
+  display: inline-block;
+  padding: 12px 0 0 17px;
+  color: #f2f2f2;
+  font-family: 'SFUIText';
+  font-size: 22px;
+  vertical-align: top;
+
+  span {
+    color: #ff192e;
+  }
+}
+
+.main-nav {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 19px;
+  vertical-align: top;
+
+  &:after {
+    position: absolute;
+    top: 9px;
+    bottom: 10px;
+    right: 0;
+    display: block;
+    width: 1px;
+    background: #2f2b2b;
+    content: '';
+  }
+}
+
+.main-nav_item {
+  display: inline-block;
+  padding: 16px 37px 17px;
+  color: #fff;
+  font-family: 'SFUIText';
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+
+  &.is-active {
+    position: relative;
+    background: #2b2525;
+
+    &:after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      height: 2px;
+      background: #ff192e;
+      content: '';
+    }
+  }
+}
+
+.page-content {
+  background: url(../img/background.jpg) center center no-repeat;
+}
+
+.footer {
+  background: #211d1d;
+  border-top: 1px solid #642424;
+}
+
+.radio-list {
+  margin: 0 -10px;
+  padding: 14px 0 9px;
+}
+
+.search-form {
+  margin: 10px 0 0 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.search-form_input {
+  padding: 7px 12px;
+  background: #231e1e;
+  border: 1px solid #423b3b;
+  border-radius: 14px;
+  outline: none;
+  color: #757575;
+  font-family: 'SFUIText';
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.search-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/icon/search.png);
+  content: '';
+}
+
+.login-btn, .about-btn {
+  float: right;
+  font-family: 'SFUIText';
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.login-btn {
+  margin: 9px 20px;
+  padding: 7px 20px;
+  background: #303030;
+  border: 1px solid #404040;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.about-btn {
+  margin: 17px 10px 0 0;
+  color: #757575;
+  cursor: pointer;
+}

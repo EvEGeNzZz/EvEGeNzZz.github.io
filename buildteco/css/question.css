@@ -1,0 +1,22 @@
+.question {
+  display: inline-block;
+  width: 450px;
+}
+
+.question + .question {
+  margin-left: 110px;
+}
+
+.question_title {
+  color: #5db057;
+  font-family: 'PFDinTextPro';
+  font-size: 24px;
+}
+
+.question_text {
+  margin: 16px 0 0;
+  padding: 0 0 0 20px;
+  color: #8c9494;
+  font-family: 'Tahoma';
+  font-size: 14px;
+}

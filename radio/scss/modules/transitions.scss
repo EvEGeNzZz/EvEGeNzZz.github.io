@@ -1,0 +1,10 @@
+@mixin slide-in-bottom-start {
+  transform: translateY(20%);
+  opacity: 0;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+@mixin slide-in-bottom-end {
+  transform: translateY(0%);
+  opacity: 1;
+}

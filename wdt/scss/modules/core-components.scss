@@ -1,0 +1,112 @@
+@mixin core-btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  user-select: none;
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:active {
+    background-image: none;
+    outline: 0;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    pointer-events: none; // Future-proof disabling of clicks
+  }
+}
+
+@mixin core-bg-equal-border($color) {
+  background: $color;
+  border-color: $color;
+}
+
+@mixin core-checkbox {
+  [type=checkbox] {
+    display: none;
+  }
+
+  & + label {
+    position: relative;
+    display: inline-block;
+  }
+
+  [type=checkbox]:checked + label {
+    opacity: 1;
+  }
+}
+
+@mixin core-checkbox-label {
+  [type=checkbox] + label {
+    @content;
+  }
+}
+
+@mixin core-checkbox-label-checked {
+  [type=checkbox]:checked + label {
+    @content;
+  }
+}
+
+@mixin core-radio {
+  display: inline-block;
+  vertical-align: middle;
+
+  input[type="radio"] {
+    display: none;
+  }
+}
+
+@mixin core-radio-label {
+  input[type="radio"] + label {
+    position: relative;
+    display: inline-block;
+    @content;
+
+    &:after {
+      opacity: 0;
+    }
+  }
+}
+
+@mixin core-radio-label-checked {
+  input[type="radio"]:checked + label:after {
+    @content;
+    opacity: 1;
+  }
+}
+
+@mixin core-form-control {
+  display: block;
+  width: 100%;
+  text-align: left;
+
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  @at-root textarea#{&} {
+    height: auto;
+    resize: none;
+  }
+}
+

@@ -1,0 +1,13 @@
+.order_title {
+  color: #fff;
+  font-family: 'PFDinTextPro';
+  font-size: 30px;
+}
+
+.order_title span {
+  text-transform: uppercase;
+}
+
+.order_desc {
+  color: #c0f5bc;
+}

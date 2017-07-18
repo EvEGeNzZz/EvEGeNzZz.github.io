@@ -1,0 +1,26 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body, button, input, textarea {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}

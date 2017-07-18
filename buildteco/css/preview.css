@@ -1,0 +1,11 @@
+.preview {
+  width: 260px;
+  padding: 20px;
+  background: #f2f5f5;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.preview:hover {
+  border-color: #5db057;
+}

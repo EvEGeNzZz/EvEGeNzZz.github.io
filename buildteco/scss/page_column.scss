@@ -1,0 +1,48 @@
+.page_column {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  padding: 0 105px 0 94px;
+
+  &:before {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    display: block;
+    width: 73px;
+    content: '';
+  }
+}
+
+.page_column__sale {
+  &:before {
+    top: 10px;
+    height: 73px;
+    background: url(../img/icon/sale-icon.png);
+  }
+}
+
+.page_column__delivery {
+  &:before {
+    height: 43px;
+    background: url(../img/icon/delivery-icon.png);
+  }
+}
+
+.page_column_title {
+  color: #010101;
+  font-family: 'PFDinTextPro';
+  font-size: 24px;
+
+  b {
+    font-weight: 700;
+  }
+}
+
+.page_column_text {
+  margin: 7px 0 0;
+  color: #747a7a;
+  font-family: 'Tahoma';
+  font-size: 14px;
+  line-height: 1.6;
+}

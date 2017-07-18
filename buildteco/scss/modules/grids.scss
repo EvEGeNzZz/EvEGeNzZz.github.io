@@ -1,0 +1,25 @@
+@function getWidthCol($n) {
+  @return ($widthCol + $widthGutter) * $n - $widthGutter;
+}
+
+@for $i from 1 through $countCol {
+  .span-#{$i} {
+    float: left;
+    margin-left: $widthGutter;
+    width: getWidthCol($i);
+  }
+}
+
+.row {
+  @include legacy-pie-clearfix;
+
+  [class^="span"]:first-child {
+    margin-left: 0;
+  }
+}
+
+@mixin container {
+  @include legacy-pie-clearfix;
+  margin: 0 auto;
+  width: getWidthCol(12);
+}

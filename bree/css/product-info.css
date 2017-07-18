@@ -1,0 +1,9 @@
+.product-info_box {
+  float: right;
+  width: 300px;
+  border: 4px solid #e4e4e4;
+}
+
+.product-info_box_img img {
+  display: block;
+}
