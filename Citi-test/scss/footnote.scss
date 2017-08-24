@@ -1,0 +1,39 @@
+.footnote {
+  padding: 19px 13px 23px;
+  border-left: 5px solid #4488bb;
+  color: #4488bb;
+  font-size: 18px;
+
+  li {
+    position: relative;
+    margin-left: 12px;
+    counter-increment: footnote;
+    line-height: 1.2;
+
+    & + li {
+      margin-top: 13px;
+    }
+
+    &:before {
+      position: absolute;
+      top: -4px;
+      left: -12px;
+      font-size: 13px;
+      content: counter(footnote);
+    }
+  }
+}
+
+@media only screen and (min-width:960px) {
+  .footnote {
+    padding: 19px 22px 15px;
+
+    li {
+      line-height: 1;
+    } 
+
+    & + li {
+      margin-top: 16px;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+@import 'navbar';
+@import 'carousel';
+@import 'footer';
+@import 'copyright';
+
+.header {
+  background: #212121;
+}
+
+.header_logo {
+  padding: 10px 0 15px;
+  float: left;
+  margin-left: 15px;
+}
+
+.header_call {
+  float: right;
+  margin: 7px 15px 0 0;
+  display: block;
+  padding: 0 18px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 31px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 42px;
+  border: 2px solid transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 41px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  & + .btn {
+    margin-left: 30px;
+  }
+
+  &:hover {
+    background: transparent;
+    transition: 0.3s;
+  }
+}
+
+.btn-1 {
+  background: #4ec67f;
+  border-color: #4ec67f;
+
+  &:hover {
+    background: #3e9e65;
+    color: #fff;
+    border-color: #3e9e65; 
+  }
+
+}
+
+.btn-2 {
+  border-color: #fff;
+  background: transparent;
+
+  &:hover {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+  }
+}
+
+#modalContact {
+  .modal-dialog {
+    max-width: 420px;
+  }
+
+  .modal-header {
+    padding: 24px 30px 7px;
+    text-align: center;
+    border: none;
+  }
+
+  .modal-title {
+    color: #424242;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  .modal-subtitle {
+    margin: 15px 0 0;
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .modal-body {
+    padding: 15px 30px 15px; 
+
+    .btn {
+      width: 100%;
+      background: #fff;
+      color: #616161;
+      border: 1px solid #616161;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 38px;
+    }
+  }
+
+  .checkbox {
+    label {
+      color: #bdbdbd;
+      font-size: 12px;
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      line-height: 1.2;
+    }
+  }
+
+  .has-error {
+    .checkbox > label {
+      color: #a94442;
+    }
+  }
+}
+
+.form-control {
+  height: 40px;
+}

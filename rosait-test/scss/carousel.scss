@@ -1,0 +1,161 @@
+.carousel {
+  .carousel-indicators {
+    bottom: 16px;
+    margin-bottom: 0;
+
+    li {
+      width: 14px;
+      height: 14px;
+      margin: 0;
+
+      & + li {
+        margin-left: 16px;
+      }
+    }
+  }
+
+  .carousel-caption {
+    top: 50%;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 0;
+
+    .slide__right {
+      text-align: left;
+
+      .slide_title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .slide_subtitle {
+        margin: 7px 0;
+        font-size: 18px;
+      }
+
+      .slide_text {
+        margin: 0 0 8px;
+        font-size: 12px;
+      }
+    }
+
+    .slide__middle {
+      .slide_title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .slide_subtitle {
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .carousel-control {
+    width: auto;
+
+    .glyphicon {
+      width: 44px;
+      height: 44px;
+      margin: 0;
+      border: 2px solid #fff;
+      border-radius: 50%;
+
+      &:before {
+        position: absolute;
+        content: '';
+        width: 17px;
+        height: 2px;
+        background: #fff;
+        display: block;
+      }
+
+      &:after {
+        position: absolute;
+        content: '';
+        width: 17px;
+        height: 2px;
+        background: #fff;
+        display: block;
+      }
+    }
+
+    .glyphicon-chevron-left {
+      left: 16px;
+
+      &:before {
+        position: absolute;
+        left: 10px;
+        top: 24px;
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        position: absolute;
+        left: 10px;
+        top: 13px;
+        transform: rotate(-45deg);
+      }
+    }
+
+    .glyphicon-chevron-right {
+      right: 16px;
+
+      &:before {
+        position: absolute;
+        left: 13px;
+        top: 24px;
+        transform: rotate(-45deg);
+      }
+
+      &:after {
+        position: absolute;
+        left: 13px;
+        top: 13px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel {
+    .carousel-caption {
+      .slide__middle {
+        .slide_title {
+          font-size: 36px;
+        }
+
+        .slide_subtitle {
+          margin: 16px 0 20px;
+          font-size: 30px;
+        }
+      }
+
+      .slide__right {
+        .slide_title {
+          font-size: 36px;
+        }
+
+        .slide_subtitle {
+          margin: 21px 0 17px;
+          font-size: 24px;
+        }
+
+        .slide_text {
+          margin: 0 0 18px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+

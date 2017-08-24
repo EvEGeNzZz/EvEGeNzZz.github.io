@@ -1,0 +1,80 @@
+@import 'reset';
+@import 'forms';
+@import 'banner';
+@import 'post';
+@import 'promo-block';
+@import 'footnote';
+@import 'modal';
+@import 'ui-selectmenu';
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Arial";
+  counter-reset: item;
+  counter-reset: footnote;
+}
+
+sup {
+  position: relative;
+  top: -8px;
+  font-size: 13px;
+}
+
+.link {
+  color: #aaa;
+  font-size: 16px;
+  text-decoration: none;
+
+  &:visited {
+    color: #aaa;
+  }
+}
+
+.container {
+  margin: auto;
+  padding: 0 10px;
+  min-width: 300px;
+  max-width: 767px;
+}
+
+.posts-list {
+  margin-top: 20px;
+}
+
+.footer {
+  background:#fff;
+  padding: 23px 0;
+}
+
+@media only screen and (min-width:768px) {
+  .container {
+    margin: auto;
+    max-width: 760px;
+  }
+}
+
+
+@media only screen and (min-width:960px) {
+  .container {
+    margin: auto;
+    padding: 0 5px;
+    max-width: 1200px;
+  }
+
+  .posts-list {
+    margin-top: 75px;
+  }
+
+  .footer {
+    padding: 21px 0;
+  }
+}

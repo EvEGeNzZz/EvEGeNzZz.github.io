@@ -1,0 +1,99 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    link href="css/main.css" rel="stylesheet"
+    link rel="stylesheet" type="text/css" media="screen" href="css/ui.jqgrid.css"
+    link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+  body
+    .banner.clearfix
+      .container
+        .banner-text
+          .banner-text_title Banner header
+          .banner-text_desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        .banner-form
+          .banner-form_title Request form
+          .form-group 
+            input#email-field.form-control type='email'
+            label for='email-field' Enter your E-Mail
+            .error-message Enter correct E-Mail
+          .form-group 
+            input#name-field.form-control type='text'
+            label for='name-field' Enter your name
+            .error-message Enter correct Name
+          .form-group 
+            select.select
+              <option value="default" disabled selected>Select your country</option>
+              <option>Russia</option>
+              <option>USA</option>
+              <option>China</option>
+              <option>Netherland</option>
+          .checkbox
+            input#terms-checkbox type='checkbox'
+            label for='terms-checkbox' I agree with Terms & Conditions
+          .btn.btn_accept.banner-form_accept Submit
+          a.link href='#' Hyperlink
+    .main-content
+      .container
+        .posts-list
+            a#post-1.post.post_size_s href='#' target='_blank'
+              .overlay
+                .post_title Post header 1
+                .post_desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            a#post-2.post.post_size_s href='#' target='_blank'
+              .overlay
+                .post_title Post header 2
+                .post_desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            a#post-3.post.post_size_s href='#' target='_blank'
+              .overlay
+                .post_title Post header 3
+                .post_desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            a#post-4.post.post_size_m href='#' target='_blank'
+              .overlay
+                .post_title Post header 4
+                .post_desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            a#post-5.post.post_size_m href='#' target='_blank'
+              .overlay
+                .post_title Post header 5
+                .post_desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    .promo-block
+      .container
+        .promo-block_pic
+          img src='img/promo.png'
+        .promo-block_content
+          .promo-block_content_title Title text
+          ol.promo-block_content_text
+            li 
+              a.modal-link Duis aute irure dolor in reprehenderit<sup>1</sup> in voluptate velit
+            li 
+              a.modal-link Ullamco laboris nisi ut aliquip ex ea commodo consequat 
+            li 
+              a.modal-link Ut enim ad minim veniam, quis nostrud exercitation 
+            li 
+              a.modal-link Et dolore magna aliqua
+            li 
+              a.modal-link Sed do eiusmod tempor<sup>2</sup> incididunt ut labore
+            li 
+              a.modal-link Lorem ipsum dolor sit amet<sup>3</sup> consectetur adipisicing elit
+    .footer
+      .container
+        ol.footnote
+          li Reprehenderit - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          li Tempor - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+          li Amet - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+    .modal-wraper
+      .modal
+        .modal_header
+          .modal_header_title External link
+          .modal_close
+        .modal_body
+          .modal_body_content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+        .modal_controls
+          .btn.btn_accept Accept
+          .btn.btn_cancel Cancel
+
+    script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    script src="js/jquery-ui.min.js"
+    script src="js/main.js"
